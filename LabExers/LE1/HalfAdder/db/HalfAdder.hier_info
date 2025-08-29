@@ -1,0 +1,9 @@
+|HalfAdder
+x => X1.IN0
+x => A1.IN0
+y => X1.IN1
+y => A1.IN1
+C <= A1.DB_MAX_OUTPUT_PORT_TYPE
+S <= X1.DB_MAX_OUTPUT_PORT_TYPE
+
+
