@@ -8,30 +8,30 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dZ:/CPE3101L_Sevilla/LabExers/LE2/simulation/modelsim
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/simulation/modelsim
 vFullAdder
-Z1 !s110 1756445634
+Z1 !s110 1756466783
 !i10b 1
 !s100 LX7hODm@_2hP[M@dEgDFA1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I0ALg^f^ZG<C]9?<7=f;nf1
+ImXgPH;bb5Ch?P`>QkF@<00
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1756444873
-Z5 8Z:/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v
-Z6 FZ:/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v
+Z4 w1756462049
+Z5 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v
+Z6 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v
 !i122 0
 L0 13 14
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1756445634.000000
-Z9 !s107 Z:/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v|
-Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Z:/CPE3101L_Sevilla/LabExers/LE2|Z:/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v|
+Z8 !s108 1756466783.000000
+Z9 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v|
 !i113 1
 Z11 o-vlog01compat -work work
-Z12 !s92 -vlog01compat -work work +incdir+Z:/CPE3101L_Sevilla/LabExers/LE2
+Z12 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2}
 Z13 tCvgOpt 0
 n@full@adder
 vHalfAdder
@@ -39,7 +39,7 @@ R1
 !i10b 1
 !s100 [YZS48[B?iS[PDBD:`D<n3
 R2
-ID<i^ag9lQVINB27a<0@@C2
+IaHSJn<]>hNRcJMICl^3B`0
 R3
 R0
 R4
@@ -60,25 +60,25 @@ R12
 R13
 n@half@adder
 vtb_FullAdder
-!s110 1756445635
+R1
 !i10b 1
-!s100 6^22f<dJ>@<0;Mbe3Mz_83
+!s100 T8BY^:8dInFf^XSLOiK5k2
 R2
-Io;APEG`:=S:P3[6E37]jL0
+IXX<jNeV<=fJP=X3>b9nPj3
 R3
 R0
-w1756445598
-8Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v
-FZ:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v
+w1756466709
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v
 !i122 1
-L0 12 22
+L0 12 28
 R7
 r1
 !s85 0
 31
 R8
-!s107 Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Z:/CPE3101L_Sevilla/LabExers/LE2|Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v|
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v|
 !i113 1
 R11
 R12
