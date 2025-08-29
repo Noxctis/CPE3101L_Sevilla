@@ -1,0 +1,54 @@
+# Reading pref.tcl
+# do FullAdder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+Z:/CPE3101L_Sevilla/LabExers/LE2 {Z:/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:33:54 on Aug 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/CPE3101L_Sevilla/LabExers/LE2" Z:/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v 
+# -- Compiling module HalfAdder
+# -- Compiling module FullAdder
+# 
+# Top level modules:
+# 	FullAdder
+# End time: 13:33:54 on Aug 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+Z:/CPE3101L_Sevilla/LabExers/LE2 {Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:33:54 on Aug 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/CPE3101L_Sevilla/LabExers/LE2" Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v 
+# -- Compiling module tb_FullAdder
+# 
+# Top level modules:
+# 	tb_FullAdder
+# End time: 13:33:55 on Aug 29,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_FullAdder
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_FullAdder 
+# Start time: 13:33:55 on Aug 29,2025
+# Loading work.tb_FullAdder
+# Loading work.FullAdder
+# Loading work.HalfAdder
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_FullAdder/UUT File: Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v Line: 17
+# ** Error: (vsim-3063) Port 'C_in' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_FullAdder/UUT File: Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v Line: 17
+# ** Warning: (vsim-3722) Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v(17): [TFMPC] - Missing connection for port 'Cin'.
+# ** Warning: (vsim-3722) Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v(17): [TFMPC] - Missing connection for port 'FaS'.
+# ** Warning: (vsim-3722) Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v(17): [TFMPC] - Missing connection for port 'FaC'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./FullAdder_run_msim_rtl_verilog.do PAUSED at line 12
+# End time: 13:35:12 on Aug 29,2025, Elapsed time: 0:01:17
+# Errors: 1, Warnings: 4

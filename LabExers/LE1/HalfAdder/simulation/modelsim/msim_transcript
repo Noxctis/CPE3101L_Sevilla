@@ -1,0 +1,51 @@
+# Reading pref.tcl
+# do HalfAdder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+Z:/CPE3101L_Sevilla/LabExers/LE1/HalfAdder {Z:/CPE3101L_Sevilla/LabExers/LE1/HalfAdder/HalfAdder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:04:19 on Aug 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/CPE3101L_Sevilla/LabExers/LE1/HalfAdder" Z:/CPE3101L_Sevilla/LabExers/LE1/HalfAdder/HalfAdder.v 
+# -- Compiling module HalfAdder
+# 
+# Top level modules:
+# 	HalfAdder
+# End time: 13:04:19 on Aug 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+Z:/CPE3101L_Sevilla/LabExers/LE1/HalfAdder {Z:/CPE3101L_Sevilla/LabExers/LE1/HalfAdder/tb_HalfAdder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:04:19 on Aug 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/CPE3101L_Sevilla/LabExers/LE1/HalfAdder" Z:/CPE3101L_Sevilla/LabExers/LE1/HalfAdder/tb_HalfAdder.v 
+# -- Compiling module tb_HalfAdder
+# 
+# Top level modules:
+# 	tb_HalfAdder
+# End time: 13:04:20 on Aug 29,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_HalfAdder
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_HalfAdder 
+# Start time: 13:04:20 on Aug 29,2025
+# Loading work.tb_HalfAdder
+# Loading work.HalfAdder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : Z:/CPE3101L_Sevilla/LabExers/LE1/HalfAdder/tb_HalfAdder.v(27)
+#    Time: 80 ns  Iteration: 0  Instance: /tb_HalfAdder
+# Break in Module tb_HalfAdder at Z:/CPE3101L_Sevilla/LabExers/LE1/HalfAdder/tb_HalfAdder.v line 27
+# End time: 13:06:19 on Aug 29,2025, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 0
