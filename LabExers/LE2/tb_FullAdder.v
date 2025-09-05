@@ -14,7 +14,13 @@ module tb_FullAdder();
 	reg	A, B, C_in;
 	wire	S, C_out;
 	
-	FullAdder UUT (.A(A),.B(B),.C_in(Cin),.S(FaS),.C_out(FaC));
+	FullAdder UUT (
+	.Cin  (C_in),   
+	.A    (A),
+	.B    (B),
+	.FaS  (S),      
+	.FaC  (C_out)
+	);
 	
 	initial
 	begin

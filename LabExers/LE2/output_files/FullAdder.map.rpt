@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FullAdder
-Fri Aug 29 13:34:57 2025
+Fri Aug 29 19:25:22 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Aug 29 13:34:57 2025       ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 29 19:25:22 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; FullAdder                                   ;
 ; Top-level Entity Name              ; FullAdder                                   ;
@@ -153,8 +153,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -164,13 +164,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                               ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                 ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
-; FullAdder.v                      ; yes             ; User Verilog HDL File  ; Z:/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; FullAdder.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -261,20 +261,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Aug 29 13:34:50 2025
+    Info: Processing started: Fri Aug 29 19:25:12 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FullAdder -c FullAdder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file fulladder.v
-    Info (12023): Found entity 1: HalfAdder File: Z:/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v Line: 5
-    Info (12023): Found entity 2: FullAdder File: Z:/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v Line: 13
+    Info (12023): Found entity 1: HalfAdder File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v Line: 5
+    Info (12023): Found entity 2: FullAdder File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file tb_fulladder.v
-    Info (12023): Found entity 1: tb_FullAdder File: Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v Line: 12
-Warning (10236): Verilog HDL Implicit Net warning at tb_FullAdder.v(17): created implicit net for "Cin" File: Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v Line: 17
-Warning (10236): Verilog HDL Implicit Net warning at tb_FullAdder.v(17): created implicit net for "FaS" File: Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v Line: 17
-Warning (10236): Verilog HDL Implicit Net warning at tb_FullAdder.v(17): created implicit net for "FaC" File: Z:/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v Line: 17
+    Info (12023): Found entity 1: tb_FullAdder File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/tb_FullAdder.v Line: 12
 Info (12127): Elaborating entity "FullAdder" for the top level hierarchy
-Info (12128): Elaborating entity "HalfAdder" for hierarchy "HalfAdder:HA1" File: Z:/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v Line: 19
+Info (12128): Elaborating entity "HalfAdder" for hierarchy "HalfAdder:HA1" File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE2/FullAdder.v Line: 19
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -282,10 +279,10 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4776 megabytes
-    Info: Processing ended: Fri Aug 29 13:34:58 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Processing ended: Fri Aug 29 19:25:23 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:27
 
 
