@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dZ:/CPE3101L_Sevilla/LabExers/LE3/simulation/modelsim
+vDec2x4
+Z1 !s110 1757046805
+!i10b 1
+!s100 fBEgTP8dz5GFm7_IXGl^L2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8U>=m<?`^J^hE9C4zQ;2V3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1757046576
+8Z:/CPE3101L_Sevilla/LabExers/LE3/Dec2x4.v
+FZ:/CPE3101L_Sevilla/LabExers/LE3/Dec2x4.v
+!i122 0
+L0 5 15
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1757046805.000000
+!s107 Z:/CPE3101L_Sevilla/LabExers/LE3/Dec2x4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Z:/CPE3101L_Sevilla/LabExers/LE3|Z:/CPE3101L_Sevilla/LabExers/LE3/Dec2x4.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+Z:/CPE3101L_Sevilla/LabExers/LE3
+Z8 tCvgOpt 0
+n@dec2x4
+vtb_Dec2x4
+R1
+!i10b 1
+!s100 b_=[d_cFP15c]O[C1bR_z0
+R2
+I22R2ZSk62UaGl_Qa>AYl[3
+R3
+R0
+w1757046628
+8Z:/CPE3101L_Sevilla/LabExers/LE3/tb_Dec2x4.v
+FZ:/CPE3101L_Sevilla/LabExers/LE3/tb_Dec2x4.v
+!i122 1
+L0 11 36
+R4
+r1
+!s85 0
+31
+R5
+!s107 Z:/CPE3101L_Sevilla/LabExers/LE3/tb_Dec2x4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Z:/CPE3101L_Sevilla/LabExers/LE3|Z:/CPE3101L_Sevilla/LabExers/LE3/tb_Dec2x4.v|
+!i113 1
+R6
+R7
+R8
+ntb_@dec2x4

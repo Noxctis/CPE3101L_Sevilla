@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# do Dec2x4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+Z:/CPE3101L_Sevilla/LabExers/LE3 {Z:/CPE3101L_Sevilla/LabExers/LE3/Dec2x4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:33:25 on Sep 05,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/CPE3101L_Sevilla/LabExers/LE3" Z:/CPE3101L_Sevilla/LabExers/LE3/Dec2x4.v 
+# -- Compiling module Dec2x4
+# 
+# Top level modules:
+# 	Dec2x4
+# End time: 12:33:25 on Sep 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+Z:/CPE3101L_Sevilla/LabExers/LE3 {Z:/CPE3101L_Sevilla/LabExers/LE3/tb_Dec2x4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:33:25 on Sep 05,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/CPE3101L_Sevilla/LabExers/LE3" Z:/CPE3101L_Sevilla/LabExers/LE3/tb_Dec2x4.v 
+# -- Compiling module tb_Dec2x4
+# 
+# Top level modules:
+# 	tb_Dec2x4
+# End time: 12:33:25 on Sep 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Dec2x4
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Dec2x4 
+# Start time: 12:33:25 on Sep 05,2025
+# Loading work.tb_Dec2x4
+# Loading work.Dec2x4
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time(ns) |  E  |  A  |   D    
+# --------------------------------
+#     1000 |  0  | 00 | 0000
+#    11000 |  0  | 01 | 0000
+#    21000 |  0  | 10 | 0000
+#    31000 |  0  | 11 | 0000
+#    41000 |  1  | 00 | 0001
+#    51000 |  1  | 01 | 0010
+#    61000 |  1  | 10 | 0100
+#    71000 |  1  | 11 | 1000
+# ** Note: $stop    : Z:/CPE3101L_Sevilla/LabExers/LE3/tb_Dec2x4.v(40)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_Dec2x4
+# Break in Module tb_Dec2x4 at Z:/CPE3101L_Sevilla/LabExers/LE3/tb_Dec2x4.v line 40
+# End time: 13:08:47 on Sep 05,2025, Elapsed time: 0:35:22
+# Errors: 0, Warnings: 0
