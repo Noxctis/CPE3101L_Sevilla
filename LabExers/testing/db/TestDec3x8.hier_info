@@ -1,0 +1,55 @@
+|TestDec3x8
+E => comb.IN0
+E => comb.IN0
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => comb.IN1
+A[2] => comb.IN1
+D[0] <= Dec2x4:DEC_LO.D
+D[1] <= Dec2x4:DEC_LO.D
+D[2] <= Dec2x4:DEC_LO.D
+D[3] <= Dec2x4:DEC_LO.D
+D[4] <= Dec2x4:DEC_HI.D
+D[5] <= Dec2x4:DEC_HI.D
+D[6] <= Dec2x4:DEC_HI.D
+D[7] <= Dec2x4:DEC_HI.D
+
+
+|TestDec3x8|Dec2x4:DEC_LO
+E => G0.IN0
+E => G1.IN0
+E => G2.IN0
+E => G3.IN0
+A[0] => G1.IN1
+A[0] => G3.IN1
+A[0] => G0.IN1
+A[0] => G2.IN1
+A[1] => G2.IN2
+A[1] => G3.IN2
+A[1] => G0.IN2
+A[1] => G1.IN2
+D[0] <= G0.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= G1.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= G2.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= G3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TestDec3x8|Dec2x4:DEC_HI
+E => G0.IN0
+E => G1.IN0
+E => G2.IN0
+E => G3.IN0
+A[0] => G1.IN1
+A[0] => G3.IN1
+A[0] => G0.IN1
+A[0] => G2.IN1
+A[1] => G2.IN2
+A[1] => G3.IN2
+A[1] => G0.IN2
+A[1] => G1.IN2
+D[0] <= G0.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= G1.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= G2.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= G3.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,71 @@
+# Reading pref.tcl
+# do TestDec3x8_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/testing {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/TestDec3x8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:42:26 on Sep 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/TestDec3x8.v 
+# -- Compiling module Dec2x4
+# -- Compiling module TestDec3x8
+# 
+# Top level modules:
+# 	TestDec3x8
+# End time: 07:42:27 on Sep 12,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/testing {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/tb_TestDec3x8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:42:27 on Sep 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/tb_TestDec3x8.v 
+# -- Compiling module tb_TestDec3x8
+# 
+# Top level modules:
+# 	tb_TestDec3x8
+# End time: 07:42:27 on Sep 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_TestDec3x8
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_TestDec3x8 
+# Start time: 07:42:27 on Sep 12,2025
+# Loading work.tb_TestDec3x8
+# Loading work.TestDec3x8
+# Loading work.Dec2x4
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time(ns) |  E  |  A2 A1 A0 |   D7 D6 D5 D4 D3 D2 D1 D0
+# ---------------------------------------------------------
+#     1000 |  0  |   0  0  0  |   0  0  0  0  0  0  0  0
+#    11000 |  0  |   0  0  1  |   0  0  0  0  0  0  0  0
+#    21000 |  0  |   0  1  0  |   0  0  0  0  0  0  0  0
+#    31000 |  0  |   0  1  1  |   0  0  0  0  0  0  0  0
+#    41000 |  0  |   1  0  0  |   0  0  0  0  0  0  0  0
+#    51000 |  0  |   1  0  1  |   0  0  0  0  0  0  0  0
+#    61000 |  0  |   1  1  0  |   0  0  0  0  0  0  0  0
+#    71000 |  0  |   1  1  1  |   0  0  0  0  0  0  0  0
+#    81000 |  1  |   0  0  0  |   0  0  0  0  0  0  0  1
+#    91000 |  1  |   0  0  1  |   0  0  0  0  0  0  1  0
+#   101000 |  1  |   0  1  0  |   0  0  0  0  0  1  0  0
+#   111000 |  1  |   0  1  1  |   0  0  0  0  1  0  0  0
+#   121000 |  1  |   1  0  0  |   0  0  0  1  0  0  0  0
+#   131000 |  1  |   1  0  1  |   0  0  1  0  0  0  0  0
+#   141000 |  1  |   1  1  0  |   0  1  0  0  0  0  0  0
+#   151000 |  1  |   1  1  1  |   1  0  0  0  0  0  0  0
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/tb_TestDec3x8.v(48)
+#    Time: 180 ns  Iteration: 0  Instance: /tb_TestDec3x8
+# Break in Module tb_TestDec3x8 at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/tb_TestDec3x8.v line 48
+# End time: 07:43:18 on Sep 12,2025, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0

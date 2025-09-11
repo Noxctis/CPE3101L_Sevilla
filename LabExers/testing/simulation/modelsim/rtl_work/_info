@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/simulation/modelsim
+vDec2x4
+Z1 !s110 1757634147
+!i10b 1
+!s100 e]foB=R7N=RB>VlVOm;dT3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IzRQbb<>i`IamDPcU]g0=^3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1757634098
+Z5 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/TestDec3x8.v
+Z6 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/TestDec3x8.v
+!i122 0
+L0 6 15
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1757634146.000000
+Z9 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/TestDec3x8.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/TestDec3x8.v|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing}
+Z13 tCvgOpt 0
+n@dec2x4
+vtb_TestDec3x8
+R1
+!i10b 1
+!s100 4Pn4hc9@73LK75D20JEQf1
+R2
+I<PbZ:HdQAWVYooJOc`IHU3
+R3
+R0
+w1757634131
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/tb_TestDec3x8.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/tb_TestDec3x8.v
+!i122 1
+L0 11 44
+R7
+r1
+!s85 0
+31
+!s108 1757634147.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/tb_TestDec3x8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/testing/tb_TestDec3x8.v|
+!i113 1
+R11
+R12
+R13
+ntb_@test@dec3x8
+vTestDec3x8
+R1
+!i10b 1
+!s100 M`7kllF7zSVjGW]VHAo;40
+R2
+IdS3DT7lPIS65XBOMHZG7G2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 22 23
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@test@dec3x8
