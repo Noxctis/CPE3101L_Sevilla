@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit/simulation/modelsim
+vComparator4Bit
+Z1 !s110 1758291514
+!i10b 1
+!s100 _Jh19gNaLPN2[=jf64On92
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IRmM<MA;:kJGAQCB8BNV;>3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1758287593
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit/Comparator4Bit.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit/Comparator4Bit.v
+!i122 0
+L0 5 11
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1758291513.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit/Comparator4Bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit/Comparator4Bit.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit}
+Z8 tCvgOpt 0
+n@comparator4@bit
+vtb_Comparator4Bit
+R1
+!i10b 1
+!s100 FZUVNn=<_S5dbkEP45VFz0
+R2
+II9?_F_O73Dzi^izb86YWH2
+R3
+R0
+R4
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit/tb_Comparator4Bit.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit/tb_Comparator4Bit.v
+!i122 1
+L0 11 31
+R5
+r1
+!s85 0
+31
+!s108 1758291514.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit/tb_Comparator4Bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/Comparator4Bit/tb_Comparator4Bit.v|
+!i113 1
+R6
+R7
+R8
+ntb_@comparator4@bit

@@ -1,0 +1,56 @@
+# Reading pref.tcl
+# do 8bit4x1Multiplexer_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/CPE3101Lfiles_Sevilla/LabExers/LE4/8bit4x1Multiplexer {D:/CPE3101Lfiles_Sevilla/LabExers/LE4/8bit4x1Multiplexer/nbit4x1Multiplexer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:34 on Sep 19,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CPE3101Lfiles_Sevilla/LabExers/LE4/8bit4x1Multiplexer" D:/CPE3101Lfiles_Sevilla/LabExers/LE4/8bit4x1Multiplexer/nbit4x1Multiplexer.v 
+# -- Compiling module nbit4x1Multiplexer
+# 
+# Top level modules:
+# 	nbit4x1Multiplexer
+# End time: 13:15:34 on Sep 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/CPE3101Lfiles_Sevilla/LabExers/LE4/8bit4x1Multiplexer {D:/CPE3101Lfiles_Sevilla/LabExers/LE4/8bit4x1Multiplexer/tb_8bit4x1Multiplexer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:34 on Sep 19,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CPE3101Lfiles_Sevilla/LabExers/LE4/8bit4x1Multiplexer" D:/CPE3101Lfiles_Sevilla/LabExers/LE4/8bit4x1Multiplexer/tb_8bit4x1Multiplexer.v 
+# -- Compiling module tb_8bit4x1Multiplexer
+# 
+# Top level modules:
+# 	tb_8bit4x1Multiplexer
+# End time: 13:15:34 on Sep 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_8bit4x1Multiplexer
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_8bit4x1Multiplexer 
+# Start time: 13:15:34 on Sep 19,2025
+# Loading work.tb_8bit4x1Multiplexer
+# Loading work.nbit4x1Multiplexer
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time	S	Y	 A	  B	   C	    D
+# 0	00	00000011	00000011	00001100	00110000	11000000
+# 10	01	00001100	00000011	00001100	00110000	11000000
+# 20	10	00110000	00000011	00001100	00110000	11000000
+# 30	11	11000000	00000011	00001100	00110000	11000000
+# ** Note: $stop    : D:/CPE3101Lfiles_Sevilla/LabExers/LE4/8bit4x1Multiplexer/tb_8bit4x1Multiplexer.v(43)
+#    Time: 40 ps  Iteration: 0  Instance: /tb_8bit4x1Multiplexer
+# Break in Module tb_8bit4x1Multiplexer at D:/CPE3101Lfiles_Sevilla/LabExers/LE4/8bit4x1Multiplexer/tb_8bit4x1Multiplexer.v line 43
+# End time: 13:15:55 on Sep 19,2025, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0

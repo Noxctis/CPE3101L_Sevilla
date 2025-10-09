@@ -1,0 +1,70 @@
+# Reading pref.tcl
+# do HexTo7SegmentDecoder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:44:30 on Oct 09,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v 
+# -- Compiling module HexTo7SegmentDecoder
+# 
+# Top level modules:
+# 	HexTo7SegmentDecoder
+# End time: 20:44:30 on Oct 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:44:31 on Oct 09,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v 
+# -- Compiling module tb_HexTo7SegmentDecoder
+# 
+# Top level modules:
+# 	tb_HexTo7SegmentDecoder
+# End time: 20:44:31 on Oct 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_HexTo7SegmentDecoder
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_HexTo7SegmentDecoder 
+# Start time: 20:44:31 on Oct 09,2025
+# Loading work.tb_HexTo7SegmentDecoder
+# Loading work.HexTo7SegmentDecoder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time	Hex	DP	Seg
+# 0	0	1	10000001
+# 10	1	1	11001111
+# 20	2	1	10010010
+# 30	3	1	10000110
+# 40	4	1	11001100
+# 50	5	1	10100100
+# 60	6	1	10100000
+# 70	7	1	10001111
+# 80	8	1	10000000
+# 90	9	1	10000100
+# 100	a	1	10001000
+# 110	b	1	11100000
+# 120	c	1	10110001
+# 130	d	1	11000010
+# 140	e	1	10110000
+# 150	f	1	10111000
+# 160	a	0	00001000
+# 170	f	0	00111000
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v(48)
+#    Time: 180 ps  Iteration: 0  Instance: /tb_HexTo7SegmentDecoder
+# Break in Module tb_HexTo7SegmentDecoder at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v line 48
+# End time: 20:48:30 on Oct 09,2025, Elapsed time: 0:03:59
+# Errors: 0, Warnings: 0

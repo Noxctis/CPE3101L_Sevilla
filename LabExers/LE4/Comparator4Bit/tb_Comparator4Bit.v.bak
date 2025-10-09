@@ -1,0 +1,42 @@
+/*
+File:           tb_Comparator4bit.v
+Author:         Chrys Sean T. Sevilla
+Class:          CPE 3101L
+Group/Schedule: Group 4 Fri 10:30 - 1:30 PM
+Description:    Testbench file for Comparator4bit (4 bit comparator)
+*/
+
+`timescale 1 ns / 1 ps
+
+module tb_Comparator4bit();
+
+    reg [3:0] A, B;
+    wire [2:0] R;
+
+    Comparator4Bit uut (
+        .A(A),
+        .B(B),
+        .R(R)
+    );
+
+    initial begin
+        $display("Time\tA\tB\tG\tE\tL");
+        $monitor("%0t\t%b\t%b\t%b\t%b\t%b", $time, A, B, R[2], R[1], R[0]);
+
+        // Test Cases
+        A = 4'b0000; B = 4'b0000; #10;
+        A = 4'b0001; B = 4'b0000; #10;
+        A = 4'b0010; B = 4'b0011; #10;
+        A = 4'b0100; B = 4'b0100; #10;
+        A = 4'b0111; B = 4'b0110; #10;
+        A = 4'b1000; B = 4'b1001; #10;
+        A = 4'b1010; B = 4'b1010; #10;
+        A = 4'b1100; B = 4'b0011; #10;
+        A = 4'b1111; B = 4'b1110; #10;
+        A = 4'b0001; B = 4'b0010; #10;
+
+        $finish;
+    end
+
+endmodule
+

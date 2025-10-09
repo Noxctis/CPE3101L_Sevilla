@@ -1,0 +1,60 @@
+# Reading pref.tcl
+# do JK_FlipFlop_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/JK_FlipFlop.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:26:34 on Oct 09,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/JK_FlipFlop.v 
+# -- Compiling module JK_FlipFlop
+# 
+# Top level modules:
+# 	JK_FlipFlop
+# End time: 21:26:34 on Oct 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/tb_JK_FlipFlop.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:26:35 on Oct 09,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/tb_JK_FlipFlop.v 
+# -- Compiling module tb_JK_FlipFlop
+# 
+# Top level modules:
+# 	tb_JK_FlipFlop
+# End time: 21:26:35 on Oct 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_JK_FlipFlop
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_JK_FlipFlop 
+# Start time: 21:26:35 on Oct 09,2025
+# Loading work.tb_JK_FlipFlop
+# Loading work.JK_FlipFlop
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time	Reset	J	K	Q
+# 0	1	0	0	0
+# 10	0	0	0	0
+# 20	0	0	1	0
+# 30	0	1	0	1
+# 40	0	1	1	0
+# 50	0	0	0	0
+# 60	0	1	1	1
+# 70	0	0	1	0
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/tb_JK_FlipFlop.v(44)
+#    Time: 80 ps  Iteration: 0  Instance: /tb_JK_FlipFlop
+# Break in Module tb_JK_FlipFlop at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/tb_JK_FlipFlop.v line 44
+# End time: 21:30:29 on Oct 09,2025, Elapsed time: 0:03:54
+# Errors: 0, Warnings: 0

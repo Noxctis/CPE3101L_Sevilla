@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer/simulation/modelsim
+vnbit4x1Multiplexer
+!s110 1758294173
+!i10b 1
+!s100 <7<711@f`zn7Can=TUBZX3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I@2EY71ca6hgEjV[jR=Khh1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1758287594
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer/nbit4x1Multiplexer.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer/nbit4x1Multiplexer.v
+!i122 0
+L0 5 12
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1758294173.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer/nbit4x1Multiplexer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer/nbit4x1Multiplexer.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer}
+Z7 tCvgOpt 0
+nnbit4x1@multiplexer
+vtb_8bit4x1Multiplexer
+!s110 1758294174
+!i10b 1
+!s100 77QWFY2ko4J0T?VMj@4`j0
+R1
+IS6e?UKh>27P@:kMEGJQPS1
+R2
+R0
+w1758293859
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer/tb_8bit4x1Multiplexer.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer/tb_8bit4x1Multiplexer.v
+!i122 1
+L0 9 38
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer/tb_8bit4x1Multiplexer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE4/nbit4x1Multiplexer/tb_8bit4x1Multiplexer.v|
+!i113 1
+R5
+R6
+R7
+ntb_8bit4x1@multiplexer

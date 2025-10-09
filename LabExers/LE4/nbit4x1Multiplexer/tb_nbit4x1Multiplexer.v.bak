@@ -1,0 +1,44 @@
+/*
+File:           tb_nbit4x1Multiplexer.v
+Author:         Chrys Sean T. Sevilla
+Class:          CPE 3101L
+Group/Schedule: Group 4 Fri 10:30 - 1:30 PM
+Description:    Testbench file for n-Bit 4-to-1 Line Multiplexer 
+*/
+
+module tb_nbit4x1Multiplexer;
+
+    reg [3:0] A, B, C, D;
+    reg [1:0] S;
+    wire [3:0] Y;
+
+    // Instantiate the UUT with default n = 4
+    nbit4x1Multiplexer #(.n(4)) UUT (
+        .A(A),
+        .B(B),
+        .C(C),
+        .D(D),
+        .S(S),
+        .Y(Y)
+    );
+
+    initial begin
+        $display("Time\tS\tY\tA\tB\tC\tD");
+        $monitor("%0t\t%b\t%b\t%b\t%b\t%b\t%b", $time, S, Y, A, B, C, D);
+
+        // Set inputs
+        A = 4'b0001;
+        B = 4'b0010;
+        C = 4'b0100;
+        D = 4'b1000;
+
+        // Test all selector values
+        S = 2'b00; #10; // Expect Y = A
+        S = 2'b01; #10; // Expect Y = B
+        S = 2'b10; #10; // Expect Y = C
+        S = 2'b11; #10; // Expect Y = D
+
+        $stop;
+    end
+
+endmodule
