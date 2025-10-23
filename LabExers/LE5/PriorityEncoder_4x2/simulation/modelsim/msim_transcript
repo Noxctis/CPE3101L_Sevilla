@@ -1,0 +1,69 @@
+# Reading pref.tcl
+# do PriorityEncoder_4x2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2 {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/PriorityEncoder_4x2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:36:01 on Oct 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/PriorityEncoder_4x2.v 
+# -- Compiling module PriorityEncoder_4x2
+# 
+# Top level modules:
+# 	PriorityEncoder_4x2
+# End time: 02:36:01 on Oct 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2 {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/tb_PriorityEncoder_4x2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:36:02 on Oct 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/tb_PriorityEncoder_4x2.v 
+# -- Compiling module tb_PriorityEncoder_4x2
+# 
+# Top level modules:
+# 	tb_PriorityEncoder_4x2
+# End time: 02:36:02 on Oct 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_PriorityEncoder_4x2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_PriorityEncoder_4x2 
+# Start time: 02:36:02 on Oct 24,2025
+# Loading work.tb_PriorityEncoder_4x2
+# Loading work.PriorityEncoder_4x2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting 4x2 Priority Encoder Testbench at time 0
+# At time  0 ns	 D = 0000 => Y = 00	 V = 0
+# At time  5 ns	 D = 0001 => Y = 00	 V = 1
+# At time 10 ns	 D = 0010 => Y = 01	 V = 1
+# At time 15 ns	 D = 0011 => Y = 01	 V = 1
+# At time 20 ns	 D = 0100 => Y = 10	 V = 1
+# At time 25 ns	 D = 0101 => Y = 10	 V = 1
+# At time 30 ns	 D = 0110 => Y = 10	 V = 1
+# At time 35 ns	 D = 0111 => Y = 10	 V = 1
+# At time 40 ns	 D = 1000 => Y = 11	 V = 1
+# At time 45 ns	 D = 1001 => Y = 11	 V = 1
+# At time 50 ns	 D = 1010 => Y = 11	 V = 1
+# At time 55 ns	 D = 1011 => Y = 11	 V = 1
+# At time 60 ns	 D = 1100 => Y = 11	 V = 1
+# At time 65 ns	 D = 1101 => Y = 11	 V = 1
+# At time 70 ns	 D = 1110 => Y = 11	 V = 1
+# At time 75 ns	 D = 1111 => Y = 11	 V = 1
+# Ending 4x2 Priority Encoder Testbench at time 80000
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/tb_PriorityEncoder_4x2.v(23)
+#    Time: 80 ns  Iteration: 0  Instance: /tb_PriorityEncoder_4x2
+# Break in Module tb_PriorityEncoder_4x2 at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/tb_PriorityEncoder_4x2.v line 23
+# End time: 02:36:52 on Oct 24,2025, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 0

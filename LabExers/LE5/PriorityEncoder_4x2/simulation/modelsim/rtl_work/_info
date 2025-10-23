@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/simulation/modelsim
+vPriorityEncoder_4x2
+!s110 1761244561
+!i10b 1
+!s100 oEWNC9Gl3RmTiA]`m3AiZ3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IS=Tnn@0E39hNA;zF4fe;@1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1761244304
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/PriorityEncoder_4x2.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/PriorityEncoder_4x2.v
+!i122 0
+L0 1 32
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1761244561.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/PriorityEncoder_4x2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/PriorityEncoder_4x2.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2}
+Z6 tCvgOpt 0
+n@priority@encoder_4x2
+vtb_PriorityEncoder_4x2
+!s110 1761244562
+!i10b 1
+!s100 i<?3mbEg[`dSl?RnMbWN<2
+R1
+ITh2Vg`=B<=70]4hZzB6GK0
+R2
+R0
+w1761244549
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/tb_PriorityEncoder_4x2.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/tb_PriorityEncoder_4x2.v
+!i122 1
+L0 2 29
+R3
+r1
+!s85 0
+31
+!s108 1761244562.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/tb_PriorityEncoder_4x2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/PriorityEncoder_4x2/tb_PriorityEncoder_4x2.v|
+!i113 1
+R4
+R5
+R6
+ntb_@priority@encoder_4x2
