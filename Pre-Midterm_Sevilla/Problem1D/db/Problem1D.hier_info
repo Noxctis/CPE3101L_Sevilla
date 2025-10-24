@@ -1,0 +1,11 @@
+|Problem1D
+A => O1.IN0
+B => O1.IN1
+C => A1.IN1
+D => O2.IN1
+E => O3.IN0
+F => O3.IN1
+G => A2.IN2
+Z <= A2.DB_MAX_OUTPUT_PORT_TYPE
+
+

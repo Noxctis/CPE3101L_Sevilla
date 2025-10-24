@@ -1,0 +1,20 @@
+// Chrys Sean T. Sevilla
+// Group 4 CPE 3101L 10:30AM - 1:30PM
+// Verilog HDL code Problem2D
+//
+module Problem1D (A, B, C, D, E, F, G, Z);
+
+	input		A, B, C, D, E, F, G;
+	output	Z;
+	
+	wire		w1,w2,w3,w4,w5;
+	
+	
+	not		N1 (w1,B); //w1=Not B
+	or			O1 (w2, A, w1); //w2=OR A and Not B
+	and		A1 (w3, w2, C); //w3 = w2 and C
+	or			O2 (w4, w3, D); //w4 = w3 or D
+	or			O3 (w5, E, F); //w5 = E or F
+	and		A2 (Z, G, w4, w5);
+	
+endmodule

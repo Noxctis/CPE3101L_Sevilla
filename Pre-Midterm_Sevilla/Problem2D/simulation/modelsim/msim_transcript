@@ -1,0 +1,69 @@
+# Reading pref.tcl
+# do Problem2D_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D {D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/Problem2D.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:34:13 on Sep 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D" D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/Problem2D.v 
+# -- Compiling module Problem2D
+# 
+# Top level modules:
+# 	Problem2D
+# End time: 11:34:13 on Sep 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D {D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/tb_Problem2D.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:34:13 on Sep 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D" D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/tb_Problem2D.v 
+# -- Compiling module tb_Problem2D
+# 
+# Top level modules:
+# 	tb_Problem2D
+# End time: 11:34:13 on Sep 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Problem2D
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Problem2D 
+# Start time: 11:34:13 on Sep 12,2025
+# Loading work.tb_Problem2D
+# Loading work.Problem2D
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time(ns) | A | B | C | D | F |
+# --------------------------------
+#     1000 | 0 | 0 | 0 | 0 | 0 |
+#    11000 | 0 | 0 | 0 | 1 | 0 |
+#    21000 | 0 | 0 | 1 | 0 | 1 |
+#    31000 | 0 | 0 | 1 | 1 | 0 |
+#    41000 | 0 | 1 | 0 | 0 | 0 |
+#    51000 | 0 | 1 | 0 | 1 | 0 |
+#    61000 | 0 | 1 | 1 | 0 | 1 |
+#    71000 | 0 | 1 | 1 | 1 | 0 |
+#    81000 | 1 | 0 | 0 | 0 | 0 |
+#    91000 | 1 | 0 | 0 | 1 | 0 |
+#   101000 | 1 | 0 | 1 | 0 | 1 |
+#   111000 | 1 | 0 | 1 | 1 | 0 |
+#   121000 | 1 | 1 | 0 | 0 | 0 |
+#   131000 | 1 | 1 | 0 | 1 | 1 |
+#   141000 | 1 | 1 | 1 | 0 | 1 |
+#   151000 | 1 | 1 | 1 | 1 | 1 |
+# ** Note: $stop    : D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/tb_Problem2D.v(49)
+#    Time: 180 ns  Iteration: 0  Instance: /tb_Problem2D
+# Break in Module tb_Problem2D at D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/tb_Problem2D.v line 49
+# End time: 11:37:56 on Sep 12,2025, Elapsed time: 0:03:43
+# Errors: 0, Warnings: 0
