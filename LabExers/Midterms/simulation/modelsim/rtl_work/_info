@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms/simulation/modelsim
+vProblem_B
+!s110 1761307935
+!i10b 1
+!s100 ENTPIoKTdkZ22jaH2K^CJ0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8JdN;ljIeJoL4g@cOiWWJ3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1761307123
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms/Problem_B.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms/Problem_B.v
+!i122 0
+L0 4 51
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1761307935.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms/Problem_B.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms/Problem_B.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms}
+Z6 tCvgOpt 0
+n@problem_@b
+vtb_Problem_B
+!s110 1761307936
+!i10b 1
+!s100 BD=6<<WJIL7i_UU3bMJTW2
+R1
+IJiG9zP2PYhU>gm7;DGh0a2
+R2
+R0
+w1761307921
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms/tb_Problem_B.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms/tb_Problem_B.v
+!i122 1
+L0 3 52
+R3
+r1
+!s85 0
+31
+!s108 1761307936.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms/tb_Problem_B.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/Midterms/tb_Problem_B.v|
+!i113 1
+R4
+R5
+R6
+ntb_@problem_@b
