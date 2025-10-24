@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/simulation/modelsim
+vProblem2D
+Z1 !s110 1757648053
+!i10b 1
+!s100 =1Zhf]Uc?DeB>]Ia^31jP3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IjP8?i9Ll7T>`YeEMhJLXc2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1757646938
+8D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/Problem2D.v
+FD:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/Problem2D.v
+!i122 0
+L0 5 14
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1757648053.000000
+!s107 D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/Problem2D.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D|D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/Problem2D.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D
+Z8 tCvgOpt 0
+n@problem2@d
+vtb_Problem2D
+R1
+!i10b 1
+!s100 onF<X[I>K_CC_ZiI2cNSG1
+R2
+IlTMhQ>j<HA=^]3l2hVEaL3
+R3
+R0
+w1757647943
+8D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/tb_Problem2D.v
+FD:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/tb_Problem2D.v
+!i122 1
+L0 12 42
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/tb_Problem2D.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D|D:/CPE3101Lfiles_Sevilla/Pre-Midterm_Sevilla/Problem2D/tb_Problem2D.v|
+!i113 1
+R6
+R7
+R8
+ntb_@problem2@d
