@@ -1,0 +1,257 @@
+# Reading pref.tcl
+# do ClockDivider_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/ClockDivider.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:12:24 on Nov 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/ClockDivider.v 
+# -- Compiling module ClockDivider
+# 
+# Top level modules:
+# 	ClockDivider
+# End time: 07:12:24 on Nov 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:12:24 on Nov 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v 
+# -- Compiling module tb_ClockDivider
+# 
+# Top level modules:
+# 	tb_ClockDivider
+# End time: 07:12:24 on Nov 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_ClockDivider
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_ClockDivider 
+# Start time: 07:12:25 on Nov 14,2025
+# Loading work.tb_ClockDivider
+# Loading work.ClockDivider
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time	clk_in	nReset	clk_out
+# 0	0	0	0
+# 1	1	0	0
+# 2	0	0	0
+# 3	1	0	0
+# 4	0	0	0
+# 5	1	1	0
+# 6	0	1	0
+# 7	1	1	0
+# 8	0	1	0
+# 9	1	1	0
+# 10	0	1	0
+# 11	1	1	0
+# 12	0	1	0
+# 13	1	1	0
+# 14	0	1	0
+# 15	1	1	0
+# 16	0	1	0
+# 17	1	1	0
+# 18	0	1	0
+# 19	1	1	0
+# 20	0	1	0
+# 21	1	1	0
+# 22	0	1	0
+# 23	1	1	1
+# 24	0	1	1
+# 25	1	1	1
+# 26	0	1	1
+# 27	1	1	1
+# 28	0	1	1
+# 29	1	1	1
+# 30	0	1	1
+# 31	1	1	1
+# 32	0	1	1
+# 33	1	1	1
+# 34	0	1	1
+# 35	1	1	1
+# 36	0	1	1
+# 37	1	1	1
+# 38	0	1	1
+# 39	1	1	1
+# 40	0	1	1
+# 41	1	1	1
+# 42	0	1	1
+# 43	1	1	0
+# 44	0	1	0
+# 45	1	1	0
+# 46	0	1	0
+# 47	1	1	0
+# 48	0	1	0
+# 49	1	1	0
+# 50	0	1	0
+# 51	1	1	0
+# 52	0	1	0
+# 53	1	1	0
+# 54	0	1	0
+# 55	1	1	0
+# 56	0	1	0
+# 57	1	1	0
+# 58	0	1	0
+# 59	1	1	0
+# 60	0	1	0
+# 61	1	1	0
+# 62	0	1	0
+# 63	1	1	1
+# 64	0	1	1
+# 65	1	1	1
+# 66	0	1	1
+# 67	1	1	1
+# 68	0	1	1
+# 69	1	1	1
+# 70	0	1	1
+# 71	1	1	1
+# 72	0	1	1
+# 73	1	1	1
+# 74	0	1	1
+# 75	1	1	1
+# 76	0	1	1
+# 77	1	1	1
+# 78	0	1	1
+# 79	1	1	1
+# 80	0	1	1
+# 81	1	1	1
+# 82	0	1	1
+# 83	1	1	0
+# 84	0	1	0
+# 85	1	1	0
+# 86	0	1	0
+# 87	1	1	0
+# 88	0	1	0
+# 89	1	1	0
+# 90	0	1	0
+# 91	1	1	0
+# 92	0	1	0
+# 93	1	1	0
+# 94	0	1	0
+# 95	1	1	0
+# 96	0	1	0
+# 97	1	1	0
+# 98	0	1	0
+# 99	1	1	0
+# 100	0	1	0
+# 101	1	1	0
+# 102	0	1	0
+# 103	1	1	1
+# 104	0	1	1
+# 105	1	1	1
+# 106	0	1	1
+# 107	1	1	1
+# 108	0	1	1
+# 109	1	1	1
+# 110	0	1	1
+# 111	1	1	1
+# 112	0	1	1
+# 113	1	1	1
+# 114	0	1	1
+# 115	1	1	1
+# 116	0	1	1
+# 117	1	1	1
+# 118	0	1	1
+# 119	1	1	1
+# 120	0	1	1
+# 121	1	1	1
+# 122	0	1	1
+# 123	1	1	0
+# 124	0	1	0
+# 125	1	1	0
+# 126	0	1	0
+# 127	1	1	0
+# 128	0	1	0
+# 129	1	1	0
+# 130	0	1	0
+# 131	1	1	0
+# 132	0	1	0
+# 133	1	1	0
+# 134	0	1	0
+# 135	1	1	0
+# 136	0	1	0
+# 137	1	1	0
+# 138	0	1	0
+# 139	1	1	0
+# 140	0	1	0
+# 141	1	1	0
+# 142	0	1	0
+# 143	1	1	1
+# 144	0	1	1
+# 145	1	1	1
+# 146	0	1	1
+# 147	1	1	1
+# 148	0	1	1
+# 149	1	1	1
+# 150	0	1	1
+# 151	1	1	1
+# 152	0	1	1
+# 153	1	1	1
+# 154	0	1	1
+# 155	1	1	1
+# 156	0	1	1
+# 157	1	1	1
+# 158	0	1	1
+# 159	1	1	1
+# 160	0	1	1
+# 161	1	1	1
+# 162	0	1	1
+# 163	1	1	0
+# 164	0	1	0
+# 165	1	1	0
+# 166	0	1	0
+# 167	1	1	0
+# 168	0	1	0
+# 169	1	1	0
+# 170	0	1	0
+# 171	1	1	0
+# 172	0	1	0
+# 173	1	1	0
+# 174	0	1	0
+# 175	1	1	0
+# 176	0	1	0
+# 177	1	1	0
+# 178	0	1	0
+# 179	1	1	0
+# 180	0	1	0
+# 181	1	1	0
+# 182	0	1	0
+# 183	1	1	1
+# 184	0	1	1
+# 185	1	1	1
+# 186	0	1	1
+# 187	1	1	1
+# 188	0	1	1
+# 189	1	1	1
+# 190	0	1	1
+# 191	1	1	1
+# 192	0	1	1
+# 193	1	1	1
+# 194	0	1	1
+# 195	1	1	1
+# 196	0	1	1
+# 197	1	1	1
+# 198	0	1	1
+# 199	1	1	1
+# 200	0	1	1
+# 201	1	1	1
+# 202	0	1	1
+# 203	1	1	0
+# 204	0	1	0
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v(30)
+#    Time: 205 ps  Iteration: 0  Instance: /tb_ClockDivider
+# Break in Module tb_ClockDivider at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v line 30
+# End time: 07:16:08 on Nov 14,2025, Elapsed time: 0:03:43
+# Errors: 0, Warnings: 0
