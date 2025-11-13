@@ -1,7 +1,3 @@
-// Chrys Sean T. Sevilla
-// Group 4 CPE 3101L 10:30AM - 1:30PM
-// Verilog HDL code for ClockDivider
-
 module ClockDivider (
     input wire clk_in,      // 50 MHz input clock
     input wire nReset,      // Active-low asynchronous reset

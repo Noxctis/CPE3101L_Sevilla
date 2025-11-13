@@ -1,3 +1,13 @@
+/*
+File:           tb_HexDigitCounter.v
+Author:         Chrys Sean T. Sevilla
+Class:          CPE 3101L
+Group/Schedule: Group 4 Fri 10:30 - 1:30 PM
+Description:    Testbench file for ClockDivider
+*/
+
+`timescale 1ns / 1ps
+
 module tb_ClockDivider;
 
     reg clk_in, nReset;
