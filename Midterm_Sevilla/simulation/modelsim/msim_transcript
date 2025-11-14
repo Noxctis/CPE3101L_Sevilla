@@ -1,0 +1,54 @@
+# Reading pref.tcl
+# do Problem_B_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+Z:/CPE3101L_Sevilla/Midterm_Sevilla {Z:/CPE3101L_Sevilla/Midterm_Sevilla/Problem_B.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:55:11 on Oct 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/CPE3101L_Sevilla/Midterm_Sevilla" Z:/CPE3101L_Sevilla/Midterm_Sevilla/Problem_B.v 
+# -- Compiling module Problem_B
+# 
+# Top level modules:
+# 	Problem_B
+# End time: 12:55:12 on Oct 24,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+Z:/CPE3101L_Sevilla/Midterm_Sevilla {Z:/CPE3101L_Sevilla/Midterm_Sevilla/tb_Problem_B.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:55:12 on Oct 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/CPE3101L_Sevilla/Midterm_Sevilla" Z:/CPE3101L_Sevilla/Midterm_Sevilla/tb_Problem_B.v 
+# -- Compiling module tb_Problem_B
+# 
+# Top level modules:
+# 	tb_Problem_B
+# End time: 12:55:12 on Oct 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Problem_B
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Problem_B 
+# Start time: 12:55:12 on Oct 24,2025
+# Loading work.tb_Problem_B
+# Loading work.Problem_B
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time(ns) | en dp hex | seg[7:0] (DP a..g) | seg[6]=a seg[5]=b
+# -----------------------------------------------------------
+# Test complete.
+# ** Note: $stop    : Z:/CPE3101L_Sevilla/Midterm_Sevilla/tb_Problem_B.v(41)
+#    Time: 120 ns  Iteration: 0  Instance: /tb_Problem_B
+# Break in Module tb_Problem_B at Z:/CPE3101L_Sevilla/Midterm_Sevilla/tb_Problem_B.v line 41
+# End time: 12:55:55 on Oct 24,2025, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 0

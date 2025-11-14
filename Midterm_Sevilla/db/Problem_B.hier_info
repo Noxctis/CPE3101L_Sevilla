@@ -1,0 +1,21 @@
+|Problem_B
+Thermo_in[0] => Decoder0.IN3
+Thermo_in[0] => Decoder1.IN3
+Thermo_in[1] => Decoder0.IN2
+Thermo_in[1] => Decoder1.IN2
+Thermo_in[2] => Decoder0.IN1
+Thermo_in[2] => Decoder1.IN1
+Thermo_in[3] => Decoder0.IN0
+Thermo_in[3] => Decoder1.IN0
+Turbo_in => Decoder0.IN4
+Err_out <= <GND>
+BGraph_out[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+BGraph_out[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+BGraph_out[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+BGraph_out[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+BGraph_out[4] <= BGraph_out.DB_MAX_OUTPUT_PORT_TYPE
+BGraph_out[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+BGraph_out[6] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+BGraph_out[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

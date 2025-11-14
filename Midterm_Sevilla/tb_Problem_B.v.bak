@@ -1,0 +1,49 @@
+`timescale 1ns / 1ps
+// Testbench for HexTo7SegmentDecoder
+module tb_Problem_B();
+
+    reg  [3:0] hex;
+    reg        dp;
+    reg        enable;
+    wire [7:0] seg;
+
+    // Instantiate the DUT
+    HexTo7SegmentDecoder UUT (
+        .hex(hex),
+        .dp(dp),
+        .enable(enable),
+        .seg(seg)
+    );
+
+    integer i;
+
+    initial begin
+        $display("Time(ns) | en dp hex | seg[7:0] (DP a..g) | seg[6]=a seg[5]=b");
+        $display("-----------------------------------------------------------");
+
+        // Sweep enable = 0 then 1
+        for (i = 0; i < 2; i = i + 1) begin
+            enable = i; // 0 -> display off, 1 -> normal
+            // test both dp states for visibility (dp is active-low in the design)
+            dp = 1'b1; // DP off
+            #5;
+            // iterate hex 0..F
+            for (hex = 4'h0; hex <= 4'hF; hex = hex + 1) begin
+                #10; // allow outputs to settle
+                $display("%8t |  %b  %b  %h  | %b | a=%b b=%b", $time, enable, dp, hex, seg, seg[6], seg[5]);
+            end
+
+            // now test dp asserted (active-low -> 0 shows DP on)
+            dp = 1'b0;
+            #5;
+            for (hex = 4'h0; hex <= 4'hF; hex = hex + 1) begin
+                #10;
+                $display("%8t |  %b  %b  %h  | %b | a=%b b=%b", $time, enable, dp, hex, seg, seg[6], seg[5]);
+            end
+        end
+
+        $display("Test complete.");
+        $stop;
+    end
+
+endmodule

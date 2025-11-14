@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "BGraph_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BGraph_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BGraph_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BGraph_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BGraph_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BGraph_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BGraph_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BGraph_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Thermo_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Thermo_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Thermo_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Thermo_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Turbo_in",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
