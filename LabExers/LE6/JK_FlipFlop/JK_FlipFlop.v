@@ -6,8 +6,12 @@ module JK_FlipFlop (
     input wire clk,       // Clock (negative-edge triggered)
     input wire reset,     // Asynchronous active-high reset
     input wire J, K,      // JK inputs
-    output reg Q          // Output
+    output reg Q,         // Output
+    output wire Qnot      // Complement of Q
 );
+
+    // Assign Qnot as the inverse of Q
+    assign Qnot = ~Q;
 
     always @(negedge clk or posedge reset) begin
         if (reset)

@@ -1,8 +1,9 @@
 |JK_FlipFlop
 clk => Q~reg0.CLK
 reset => Q~reg0.ACLR
-J => Mux0.IN3
-K => Mux0.IN4
+J => Mux0.IN2
+K => Mux0.IN3
 Q << Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qnot << Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
