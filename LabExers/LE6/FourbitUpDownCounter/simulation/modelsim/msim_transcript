@@ -1,0 +1,67 @@
+# Reading pref.tcl
+# do FourbitUpDownCounter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/FourbitUpDownCounter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:29:57 on Nov 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/FourbitUpDownCounter.v 
+# -- Compiling module FourbitUpDownCounter
+# 
+# Top level modules:
+# 	FourbitUpDownCounter
+# End time: 09:29:57 on Nov 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/tb_FourbitUpDownCounter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:29:57 on Nov 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/tb_FourbitUpDownCounter.v 
+# -- Compiling module tb_FourbitUpDownCounter
+# 
+# Top level modules:
+# 	tb_FourbitUpDownCounter
+# End time: 09:29:57 on Nov 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_FourbitUpDownCounter
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_FourbitUpDownCounter 
+# Start time: 09:29:57 on Nov 14,2025
+# Loading work.tb_FourbitUpDownCounter
+# Loading work.FourbitUpDownCounter
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time	Reset	Load	Count_en	Up	Data_in	Count
+# 0	0	0	0		0	0000	0000
+# 10	1	1	0		0	0101	0000
+# 15	1	1	0		0	0101	0101
+# 20	1	0	0		0	0101	0101
+# 30	1	0	1		0	0101	0101
+# 35	1	0	1		0	0101	0100
+# 45	1	0	1		0	0101	0011
+# 55	1	0	1		0	0101	0010
+# 60	1	0	1		1	0101	0010
+# 65	1	0	1		1	0101	0011
+# 75	1	0	1		1	0101	0100
+# 85	1	0	1		1	0101	0101
+# 90	0	0	1		1	0101	0000
+# 100	1	0	1		1	0101	0000
+# 105	1	0	1		1	0101	0001
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/tb_FourbitUpDownCounter.v(56)
+#    Time: 110 ps  Iteration: 0  Instance: /tb_FourbitUpDownCounter
+# Break in Module tb_FourbitUpDownCounter at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/tb_FourbitUpDownCounter.v line 56
+# End time: 09:47:22 on Nov 14,2025, Elapsed time: 0:17:25
+# Errors: 0, Warnings: 0

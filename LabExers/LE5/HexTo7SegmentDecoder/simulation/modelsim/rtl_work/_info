@@ -10,52 +10,52 @@ z2
 cModel Technology
 Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/simulation/modelsim
 vHexTo7SegmentDecoder
-!s110 1760013870
+Z1 !s110 1763078949
 !i10b 1
 !s100 UD<0j91f=D8g_@[IozR1G1
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 ITbScI>A5Z_JKE?iH5HI0P2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1760013793
+w1761270825
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v
 !i122 0
 L0 5 33
-Z3 OV;L;2020.1;71
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1760013870.000000
+Z5 !s108 1763078949.000000
 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v|
 !i113 1
-Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder}
-Z6 tCvgOpt 0
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder}
+Z8 tCvgOpt 0
 n@hex@to7@segment@decoder
 vtb_HexTo7SegmentDecoder
-!s110 1760013871
+R1
 !i10b 1
 !s100 =aHScRR0LPJz1jfHk^0WL3
-R1
-IofnR550;ZH^?I_?[^TFbg3
 R2
+IofnR550;ZH^?I_?[^TFbg3
+R3
 R0
 w1760013805
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v
 !i122 1
 L0 9 43
-R3
+R4
 r1
 !s85 0
 31
-!s108 1760013871.000000
+R5
 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v|
 !i113 1
-R4
-R5
 R6
+R7
+R8
 ntb_@hex@to7@segment@decoder

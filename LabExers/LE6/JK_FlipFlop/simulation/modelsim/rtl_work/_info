@@ -10,52 +10,52 @@ z2
 cModel Technology
 Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/simulation/modelsim
 vJK_FlipFlop
-!s110 1760016394
+Z1 !s110 1763082878
 !i10b 1
 !s100 iG1h5Q7@DLYbdfK]Z`KRk0
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IE:OBQ92aDXnLjHTA0_I^W2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1760015584
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/JK_FlipFlop.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/JK_FlipFlop.v
 !i122 0
 L0 5 21
-Z3 OV;L;2020.1;71
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1760016394.000000
+Z5 !s108 1763082878.000000
 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/JK_FlipFlop.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/JK_FlipFlop.v|
 !i113 1
-Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop}
-Z6 tCvgOpt 0
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop}
+Z8 tCvgOpt 0
 n@j@k_@flip@flop
 vtb_JK_FlipFlop
-!s110 1760016395
+R1
 !i10b 1
 !s100 3m=1M7X5m8W@EKGz;LPJO0
-R1
-I;>ACB6i31NzZ12Z<^TbbF1
 R2
+I;>ACB6i31NzZ12Z<^TbbF1
+R3
 R0
 w1760016380
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/tb_JK_FlipFlop.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/tb_JK_FlipFlop.v
 !i122 1
 L0 8 40
-R3
+R4
 r1
 !s85 0
 31
-!s108 1760016395.000000
+R5
 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/tb_JK_FlipFlop.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/JK_FlipFlop/tb_JK_FlipFlop.v|
 !i113 1
-R4
-R5
 R6
+R7
+R8
 ntb_@j@k_@flip@flop

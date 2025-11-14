@@ -12,29 +12,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:44:30 on Oct 09,2025
+# Start time: 08:09:09 on Nov 14,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v 
 # -- Compiling module HexTo7SegmentDecoder
 # 
 # Top level modules:
 # 	HexTo7SegmentDecoder
-# End time: 20:44:30 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 08:09:09 on Nov 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:44:31 on Oct 09,2025
+# Start time: 08:09:09 on Nov 14,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v 
 # -- Compiling module tb_HexTo7SegmentDecoder
 # 
 # Top level modules:
 # 	tb_HexTo7SegmentDecoder
-# End time: 20:44:31 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 08:09:09 on Nov 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_HexTo7SegmentDecoder
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_HexTo7SegmentDecoder 
-# Start time: 20:44:31 on Oct 09,2025
+# Start time: 08:09:09 on Nov 14,2025
 # Loading work.tb_HexTo7SegmentDecoder
 # Loading work.HexTo7SegmentDecoder
 # 
@@ -66,5 +66,5 @@
 # ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v(48)
 #    Time: 180 ps  Iteration: 0  Instance: /tb_HexTo7SegmentDecoder
 # Break in Module tb_HexTo7SegmentDecoder at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/tb_HexTo7SegmentDecoder.v line 48
-# End time: 20:48:30 on Oct 09,2025, Elapsed time: 0:03:59
+# End time: 08:09:59 on Nov 14,2025, Elapsed time: 0:00:50
 # Errors: 0, Warnings: 0

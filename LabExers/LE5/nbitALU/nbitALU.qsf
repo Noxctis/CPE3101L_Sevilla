@@ -60,7 +60,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name VERILOG_FILE nbitALU.v
 set_global_assignment -name VERILOG_FILE tb_nbitALU.v
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -70,3 +69,4 @@ set_global_assignment -name EDA_TEST_BENCH_NAME tb_nbitALU -section_id eda_simul
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_nbitALU
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_nbitALU -section_id tb_nbitALU
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_nbitALU.v -section_id tb_nbitALU
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
