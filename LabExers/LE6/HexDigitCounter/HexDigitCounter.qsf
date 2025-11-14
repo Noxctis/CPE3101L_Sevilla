@@ -58,9 +58,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VERILOG_FILE HexTo7SegmentDecoder.v
 set_global_assignment -name VERILOG_FILE FourbitUpDownCounter.v
 set_global_assignment -name VERILOG_FILE ClockDivider.v
@@ -68,8 +65,30 @@ set_global_assignment -name VERILOG_FILE HexDigitCounter.v
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VERILOG_FILE tb_HexDigitCounter.v
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_NAME tb_HexDigitCounter -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_HexDigitCounter
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_HexDigitCounter -section_id tb_HexDigitCounter
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_HexDigitCounter.v -section_id tb_HexDigitCounter
+set_location_assignment PIN_C14 -to seg[0]
+set_location_assignment PIN_E15 -to seg[1]
+set_location_assignment PIN_C15 -to seg[2]
+set_location_assignment PIN_C16 -to seg[3]
+set_location_assignment PIN_E16 -to seg[4]
+set_location_assignment PIN_D17 -to seg[5]
+set_location_assignment PIN_C17 -to seg[6]
+set_location_assignment PIN_D15 -to seg[7]
+set_location_assignment PIN_P11 -to clk_in
+set_location_assignment PIN_F15 -to count_en
+set_location_assignment PIN_C12 -to data_in[3]
+set_location_assignment PIN_D12 -to data_in[2]
+set_location_assignment PIN_C10 -to data_in[0]
+set_location_assignment PIN_C11 -to data_in[1]
+set_location_assignment PIN_A12 -to dp
+set_location_assignment PIN_B14 -to nReset
+set_location_assignment PIN_A14 -to load
+set_location_assignment PIN_A13 -to up
+set_global_assignment -name VERILOG_FILE ../FourbitUpDownCounter/TopModule.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

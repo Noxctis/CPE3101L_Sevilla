@@ -32,11 +32,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
+					"name" : "nReset",
 					"strict" : false
 				},
 				{
@@ -53,6 +49,10 @@
 				},
 				{
 					"name" : "data_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_in",
 					"strict" : false
 				}
 			]
