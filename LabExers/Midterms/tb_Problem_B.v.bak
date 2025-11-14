@@ -1,0 +1,63 @@
+`timescale 1ns/1ps
+
+module tb_Problem_B();
+
+    // Testbench signals
+    reg  [3:0] Thermo_In;
+    reg        Turbo_In;
+    wire [7:0] BGraph_Out;
+    wire       Err_Out;
+
+    // DUT instantiation
+    Problem_B UUT (
+        .Thermo_In(Thermo_In),
+        .Turbo_In(Turbo_In),
+        .BGraph_Out(BGraph_Out),
+        .Err_Out(Err_Out)
+    );
+
+    // Task for display
+    task show;
+        begin
+            #5;
+            $display("Turbo=%b  Thermo=%b  |  BGraph_Out=%b  Err=%b",
+                      Turbo_In, Thermo_In, BGraph_Out, Err_Out);
+        end
+    endtask
+
+    initial begin
+        $display("===============================================");
+        $display("TEST START: AirconDisplay");
+        $display("===============================================");
+
+        // OFF
+        Turbo_In = 0; Thermo_In = 4'b0000; show();
+        Turbo_In = 1; Thermo_In = 4'b0000; show();
+
+        // LOW FAN
+        Turbo_In = 0; Thermo_In = 4'b0001; show();
+        Turbo_In = 1; Thermo_In = 4'b0001; show();
+
+        // HIGH FAN
+        Turbo_In = 0; Thermo_In = 4'b0010; show();
+        Turbo_In = 1; Thermo_In = 4'b0010; show();
+
+        // LOW COOL
+        Turbo_In = 0; Thermo_In = 4'b0100; show();
+        Turbo_In = 1; Thermo_In = 4'b0100; show();
+
+        // HIGH COOL
+        Turbo_In = 0; Thermo_In = 4'b1000; show();
+        Turbo_In = 1; Thermo_In = 4'b1000; show();
+
+        // INVALID
+        Turbo_In = 0; Thermo_In = 4'b1111; show();
+        Turbo_In = 1; Thermo_In = 4'b0111; show();
+
+        $display("===============================================");
+        $display("TEST END");
+        $display("===============================================");
+        $stop;
+    end
+
+endmodule

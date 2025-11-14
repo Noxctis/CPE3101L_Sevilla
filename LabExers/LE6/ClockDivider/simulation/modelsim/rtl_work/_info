@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/simulation/modelsim
+vClockDivider
+!s110 1763076906
+!i10b 1
+!s100 6;WjAH:XhAkjEYTLJ@<iD0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IV28zh]l7CWz>V>b3U:ZJ<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1763076547
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/ClockDivider.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/ClockDivider.v
+!i122 0
+L0 5 28
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1763076906.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/ClockDivider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/ClockDivider.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider}
+Z6 tCvgOpt 0
+n@clock@divider
+vtb_ClockDivider
+!s110 1763076907
+!i10b 1
+!s100 z1NEZn1GU:]nEWKX0E]:F2
+R1
+IcbZMTL9XkXW5Zkn8?:HXL2
+R2
+R0
+w1763076612
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v
+!i122 1
+L0 11 33
+R3
+r1
+!s85 0
+31
+!s108 1763076907.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v|
+!i113 1
+R4
+R5
+R6
+ntb_@clock@divider

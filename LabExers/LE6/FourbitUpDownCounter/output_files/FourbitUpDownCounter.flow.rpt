@@ -1,5 +1,5 @@
 Flow report for FourbitUpDownCounter
-Thu Oct 09 21:41:12 2025
+Fri Nov 14 09:16:27 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Oct 09 21:41:12 2025       ;
+; Flow Status                        ; Successful - Fri Nov 14 09:16:27 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; FourbitUpDownCounter                        ;
 ; Top-level Entity Name              ; FourbitUpDownCounter                        ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 10/09/2025 21:41:04  ;
+; Start date & time ; 11/14/2025 09:16:20  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; FourbitUpDownCounter ;
 +-------------------+----------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 176156949477263.176001726436564        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 1095497978682.176308298027700          ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_FourbitUpDownCounter           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_timing_analysis               ;
@@ -110,8 +110,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4836 MB             ; 00:00:20                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:20                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4840 MB             ; 00:00:19                           ;
+; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

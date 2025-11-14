@@ -12,29 +12,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/nbitALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:01:29 on Oct 09,2025
+# Start time: 08:48:59 on Nov 14,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/nbitALU.v 
 # -- Compiling module nbitALU
 # 
 # Top level modules:
 # 	nbitALU
-# End time: 21:01:30 on Oct 09,2025, Elapsed time: 0:00:01
+# End time: 08:48:59 on Nov 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/tb_nbitALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:01:30 on Oct 09,2025
+# Start time: 08:48:59 on Nov 14,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/tb_nbitALU.v 
 # -- Compiling module tb_nbitALU
 # 
 # Top level modules:
 # 	tb_nbitALU
-# End time: 21:01:30 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 08:49:00 on Nov 14,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_nbitALU
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_nbitALU 
-# Start time: 21:01:30 on Oct 09,2025
+# Start time: 08:49:00 on Nov 14,2025
 # Loading work.tb_nbitALU
 # Loading work.nbitALU
 # 
@@ -72,5 +72,5 @@
 # ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/tb_nbitALU.v(67)
 #    Time: 240 ps  Iteration: 0  Instance: /tb_nbitALU
 # Break in Module tb_nbitALU at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/tb_nbitALU.v line 67
-# End time: 21:04:53 on Oct 09,2025, Elapsed time: 0:03:23
+# End time: 09:09:43 on Nov 14,2025, Elapsed time: 0:20:43
 # Errors: 0, Warnings: 0
