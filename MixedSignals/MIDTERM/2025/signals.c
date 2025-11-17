@@ -73,7 +73,20 @@ double z(double t)
 //Edit this function as needed but keep the function prototype
 double r(double t)
 {
-  return t >= 0.0 ? 1.0 : -1.0;
+  if (t < 1.0 - dt)
+    return 0.0;
+  else if (t < 1.0 + dt)
+    return Inf;
+  else if (t <= 2.0)
+    return -4.0;
+  else if (t <= 3.0)
+    return 2.0;
+  else if (t <= 5.0)
+    return 0.5;
+  else if (t <= 6.0)
+    return 1.0;
+  else
+    return 0.0;
 }
 
 
