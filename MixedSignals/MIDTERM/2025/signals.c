@@ -65,7 +65,7 @@ double z(double t)
   double segment1 = (-t - 8.0) * (u(t + 8.0) - u(t + 7.0));
   double segment2 = (-0.5 * t - 3.5) * (u(t + 7.0) - u(t + 5.0));
   double segment3 = (-2.0 * t - 11.0) * (u(t + 5.0) - u(t + 4.0));
-  double segment4 = (13.0 + 4.0 * t) * (u(t + 4.0) - u(t + 3.0));
+  double segment4 = (4.0 * t + 13.0) * (u(t + 4.0) - u(t + 3.0));
 
   return segment1 + segment2 + segment3 + segment4;
 }
