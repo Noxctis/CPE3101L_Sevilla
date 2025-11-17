@@ -93,6 +93,3 @@ double r(double t)
 
 
 
-
-
-
