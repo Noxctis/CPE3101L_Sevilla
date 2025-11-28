@@ -51,6 +51,6 @@ nReset => counter[21].ACLR
 nReset => counter[22].ACLR
 nReset => counter[23].ACLR
 nReset => counter[24].ACLR
-clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_out << clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

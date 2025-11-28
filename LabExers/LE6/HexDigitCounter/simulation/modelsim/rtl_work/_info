@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/simulation/modelsim
 vClockDivider
-Z1 !s110 1763076745
+Z1 !s110 1764348607
 !i10b 1
-!s100 6;WjAH:XhAkjEYTLJ@<iD0
+!s100 @f]S`1H[^@z<ajk4J9dJX0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IZSeg6Od>LzX77jOT6>0lF2
+I@7::A7O_c;X^609<aRanj3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1763076506
+w1764344107
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/ClockDivider.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/ClockDivider.v
 !i122 2
-L0 5 28
+L0 5 26
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1763076745.000000
+Z5 !s108 1764348607.000000
 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/ClockDivider.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/ClockDivider.v|
 !i113 1
@@ -60,14 +60,14 @@ R7
 R8
 n@fourbit@up@down@counter
 vHexDigitCounter
-R1
+Z9 !s110 1764348608
 !i10b 1
-!s100 Pb<AgfTD0k7WneXzc7Iml2
+!s100 Eh^IHZ<YzI5:SecaP9>FS2
 R2
-I8[3zYGGdh;U>O03]hMRGc0
+IH6eUeK=id26lUhbMN:2aG0
 R3
 R0
-w1763076301
+w1764346957
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/HexDigitCounter.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/HexDigitCounter.v
 !i122 3
@@ -87,16 +87,16 @@ n@hex@digit@counter
 vHexTo7SegmentDecoder
 R1
 !i10b 1
-!s100 UD<0j91f=D8g_@[IozR1G1
+!s100 N`VkKl5icK5PfKa^5HE<c3
 R2
-I83SYi@cmf]1H81V;nSmg:2
+I1B0Nz7HGzEFBXQhhM^;782
 R3
 R0
-w1761270825
+w1763125232
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/HexTo7SegmentDecoder.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/HexTo7SegmentDecoder.v
 !i122 0
-L0 5 33
+L0 5 34
 R4
 r1
 !s85 0
@@ -110,23 +110,23 @@ R7
 R8
 n@hex@to7@segment@decoder
 vtb_HexDigitCounter
-!s110 1763076746
+R9
 !i10b 1
-!s100 LP?cM:a9YVnbn2MgZN^Ij0
+!s100 K?lQB=>XX_SN46H1cSdjU1
 R2
-I;_^V4LT@foA^VY;8aE]K02
+ITD<G5aem:A>G1=MJm[_;93
 R3
 R0
-w1763076479
+w1764348607
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/tb_HexDigitCounter.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/tb_HexDigitCounter.v
 !i122 4
-L0 11 46
+L0 11 81
 R4
 r1
 !s85 0
 31
-!s108 1763076746.000000
+!s108 1764348608.000000
 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/tb_HexDigitCounter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/tb_HexDigitCounter.v|
 !i113 1

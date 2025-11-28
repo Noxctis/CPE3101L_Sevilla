@@ -1,3 +1,6 @@
+// Chrys Sean T. Sevilla
+// Group 4 CPE 3101L 10:30AM - 1:30PM
+// Verilog HDL code for FourbitUpDownCounter
 
 module TopModule (
     input wire clk_in,       // 50 MHz clock

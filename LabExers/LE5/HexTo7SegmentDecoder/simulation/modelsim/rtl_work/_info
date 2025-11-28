@@ -10,14 +10,14 @@ z2
 cModel Technology
 Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/simulation/modelsim
 vHexTo7SegmentDecoder
-Z1 !s110 1763078949
+Z1 !s110 1763125522
 !i10b 1
-!s100 UD<0j91f=D8g_@[IozR1G1
+!s100 T5EEjic718O4VMdL;[U^40
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ITbScI>A5Z_JKE?iH5HI0P2
+IZIBKzc36akGK9dC47[:3Q3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1761270825
+w1763125310
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v
 !i122 0
@@ -26,7 +26,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1763078949.000000
+Z5 !s108 1763125522.000000
 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/HexTo7SegmentDecoder/HexTo7SegmentDecoder.v|
 !i113 1

@@ -11,10 +11,9 @@ module HexTo7SegmentDecoder (
     always @(*) begin
         case (hex)
             //dp g f e d c b a
-            // dp abcdefg
-4'h0: seg[6:0] = 7'b1000000;
+				4'h0: seg[6:0] = 7'b1000000;
             4'h1: seg[6:0] = 7'b1111001; 
-            4'h2: seg[6:0] = 7'b0100100;//ok 
+            4'h2: seg[6:0] = 7'b0100100;
             4'h3: seg[6:0] = 7'b0110000;
             4'h4: seg[6:0] = 7'b0011001;
             4'h5: seg[6:0] = 7'b0010010;

@@ -9,10 +9,8 @@ module ClockDivider (
 );
 
     // Calculate division factor:
-    // 50 MHz / 2 Hz = 25,000,000 cycles per half-period
-    parameter DIV_FACTOR = 25_000_000; // For FPGA
-    // For simulation, use smaller value like 10 or 20
-
+    // 50 MHz / 4 = 12,500,000 cycles per half-period
+    parameter DIV_FACTOR = 12_500_000; // For FPGA
     reg [24:0] counter; // Enough bits for 25 million
 
     always @(posedge clk_in or negedge nReset) begin

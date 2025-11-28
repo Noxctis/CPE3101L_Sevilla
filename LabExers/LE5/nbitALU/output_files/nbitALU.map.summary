@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Nov 14 08:47:10 2025
+Analysis & Synthesis Status : Successful - Fri Nov 14 22:30:29 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : nbitALU
 Top-level Entity Name : nbitALU
 Family : MAX 10
-Total logic elements : 21
-    Total combinational functions : 21
+Total logic elements : 22
+    Total combinational functions : 22
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 16
+Total pins : 17
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

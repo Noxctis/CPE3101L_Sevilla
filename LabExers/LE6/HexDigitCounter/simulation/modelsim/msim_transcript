@@ -12,59 +12,59 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/HexTo7SegmentDecoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 07:32:25 on Nov 14,2025
+# Start time: 00:50:07 on Nov 29,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/HexTo7SegmentDecoder.v 
 # -- Compiling module HexTo7SegmentDecoder
 # 
 # Top level modules:
 # 	HexTo7SegmentDecoder
-# End time: 07:32:25 on Nov 14,2025, Elapsed time: 0:00:00
+# End time: 00:50:07 on Nov 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/FourbitUpDownCounter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 07:32:25 on Nov 14,2025
+# Start time: 00:50:07 on Nov 29,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/FourbitUpDownCounter.v 
 # -- Compiling module FourbitUpDownCounter
 # 
 # Top level modules:
 # 	FourbitUpDownCounter
-# End time: 07:32:25 on Nov 14,2025, Elapsed time: 0:00:00
+# End time: 00:50:07 on Nov 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/ClockDivider.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 07:32:25 on Nov 14,2025
+# Start time: 00:50:07 on Nov 29,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/ClockDivider.v 
 # -- Compiling module ClockDivider
 # 
 # Top level modules:
 # 	ClockDivider
-# End time: 07:32:25 on Nov 14,2025, Elapsed time: 0:00:00
+# End time: 00:50:07 on Nov 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/HexDigitCounter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 07:32:25 on Nov 14,2025
+# Start time: 00:50:07 on Nov 29,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/HexDigitCounter.v 
 # -- Compiling module HexDigitCounter
 # 
 # Top level modules:
 # 	HexDigitCounter
-# End time: 07:32:25 on Nov 14,2025, Elapsed time: 0:00:00
+# End time: 00:50:08 on Nov 29,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/tb_HexDigitCounter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 07:32:26 on Nov 14,2025
+# Start time: 00:50:08 on Nov 29,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/tb_HexDigitCounter.v 
 # -- Compiling module tb_HexDigitCounter
 # 
 # Top level modules:
 # 	tb_HexDigitCounter
-# End time: 07:32:26 on Nov 14,2025, Elapsed time: 0:00:00
+# End time: 00:50:08 on Nov 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_HexDigitCounter
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_HexDigitCounter 
-# Start time: 07:32:26 on Nov 14,2025
+# Start time: 00:50:08 on Nov 29,2025
 # Loading work.tb_HexDigitCounter
 # Loading work.HexDigitCounter
 # Loading work.ClockDivider
@@ -77,10 +77,31 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Time	Count	Seg
-# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/tb_HexDigitCounter.v(53)
-#    Time: 235 ns  Iteration: 0  Instance: /tb_HexDigitCounter
-# Break in Module tb_HexDigitCounter at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/tb_HexDigitCounter.v line 53
-# WARNING: No extended dataflow license exists
-# End time: 07:33:23 on Nov 14,2025, Elapsed time: 0:00:57
+# Time	Reset	Load	CountEn	Up	DataIn	Seg	Digit
+# 0	0	0	0	1	0	c0	0
+# 5000	1	1	0	1	a	88	a
+# 15000	1	0	1	1	a	83	b
+# 17000	1	0	1	1	a	c6	c
+# 19000	1	0	1	1	a	a1	d
+# 21000	1	0	1	1	a	86	e
+# 23000	1	0	1	1	a	8e	f
+# 25000	1	0	1	1	a	c0	0
+# 27000	1	0	1	1	a	f9	1
+# 29000	1	0	1	1	a	a4	2
+# 31000	1	0	1	1	a	b0	3
+# 33000	1	0	1	1	a	99	4
+# 35000	1	0	1	0	a	b0	3
+# 37000	1	0	1	0	a	a4	2
+# 39000	1	0	1	0	a	f9	1
+# 41000	1	0	1	0	a	c0	0
+# 43000	1	0	1	0	a	8e	f
+# 45000	1	0	1	0	a	86	e
+# 47000	1	0	1	0	a	a1	d
+# 49000	1	0	1	0	a	c6	c
+# 51000	1	0	1	0	a	83	b
+# 53000	1	0	1	0	a	88	a
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/tb_HexDigitCounter.v(88)
+#    Time: 55 ns  Iteration: 0  Instance: /tb_HexDigitCounter
+# Break in Module tb_HexDigitCounter at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/HexDigitCounter/tb_HexDigitCounter.v line 88
+# End time: 00:51:23 on Nov 29,2025, Elapsed time: 0:01:15
 # Errors: 0, Warnings: 0

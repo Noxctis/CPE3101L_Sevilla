@@ -1,5 +1,5 @@
 /*
-File:           tb_HexDigitCounter.v
+File:           tb_ClockDivider.v
 Author:         Chrys Sean T. Sevilla
 Class:          CPE 3101L
 Group/Schedule: Group 4 Fri 10:30 - 1:30 PM
@@ -13,14 +13,12 @@ module tb_ClockDivider;
     reg clk_in, nReset;
     wire clk_out;
 
-    // Instantiate Clock Divider with smaller factor for simulation
     ClockDivider #(.DIV_FACTOR(10)) uut (
         .clk_in(clk_in),
         .nReset(nReset),
         .clk_out(clk_out)
     );
 
-    // Generate input clock (simulate 50 MHz scaled down)
     initial begin
         clk_in = 0;
         forever #1 clk_in = ~clk_in; // 1 time unit period
@@ -34,7 +32,7 @@ module tb_ClockDivider;
         nReset = 0; #5;
         nReset = 1;
 
-        // Let clock run for a while
+        
         #200;
 
         $stop;

@@ -12,29 +12,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/ClockDivider.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 07:35:06 on Nov 14,2025
+# Start time: 23:21:42 on Nov 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/ClockDivider.v 
 # -- Compiling module ClockDivider
 # 
 # Top level modules:
 # 	ClockDivider
-# End time: 07:35:06 on Nov 14,2025, Elapsed time: 0:00:00
+# End time: 23:21:42 on Nov 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 07:35:07 on Nov 14,2025
+# Start time: 23:21:42 on Nov 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v 
 # -- Compiling module tb_ClockDivider
 # 
 # Top level modules:
 # 	tb_ClockDivider
-# End time: 07:35:07 on Nov 14,2025, Elapsed time: 0:00:00
+# End time: 23:21:42 on Nov 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_ClockDivider
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_ClockDivider 
-# Start time: 07:35:07 on Nov 14,2025
+# Start time: 23:21:42 on Nov 28,2025
 # Loading work.tb_ClockDivider
 # Loading work.ClockDivider
 # 
@@ -253,5 +253,5 @@
 # ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v(40)
 #    Time: 205 ns  Iteration: 0  Instance: /tb_ClockDivider
 # Break in Module tb_ClockDivider at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/ClockDivider/tb_ClockDivider.v line 40
-# End time: 07:39:30 on Nov 14,2025, Elapsed time: 0:04:23
+# End time: 23:24:16 on Nov 28,2025, Elapsed time: 0:02:34
 # Errors: 0, Warnings: 0

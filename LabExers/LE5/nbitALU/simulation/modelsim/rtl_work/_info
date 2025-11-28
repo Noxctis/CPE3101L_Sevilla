@@ -10,52 +10,52 @@ z2
 cModel Technology
 Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/simulation/modelsim
 vnbitALU
-!s110 1763081339
+Z1 !s110 1763130818
 !i10b 1
-!s100 P0nV<JeE@zWDL9D?g[PYo3
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IjF@NNFU@ZYQNzOHW7macA0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 OP@X:>aGHoUF6On`z;FA^0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;Y3=zJnb<oE?KoJlz1m330
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1761238539
+w1763130597
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/nbitALU.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/nbitALU.v
 !i122 0
-L0 5 24
-Z3 OV;L;2020.1;71
+L0 5 25
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z4 !s108 1763081339.000000
+Z5 !s108 1763130818.000000
 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/nbitALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/nbitALU.v|
 !i113 1
-Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU}
-Z7 tCvgOpt 0
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU}
+Z8 tCvgOpt 0
 nnbit@a@l@u
 vtb_nbitALU
-!s110 1763081340
-!i10b 1
-!s100 ?41X^FG5CmeZgngoVQ`l10
 R1
-IDz7dG4Z_Bb9bkOQQJjY]i3
+!i10b 1
+!s100 A@j8JGnDg3zhoKhW:zi2>1
 R2
+I6`;:kibRV9Y;_4Y60XZSW0
+R3
 R0
-w1760014514
+w1763130782
 8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/tb_nbitALU.v
 FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/tb_nbitALU.v
 !i122 1
-L0 8 63
-R3
+L0 8 65
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/tb_nbitALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE5/nbitALU/tb_nbitALU.v|
 !i113 1
-R5
 R6
 R7
+R8
 ntb_nbit@a@l@u

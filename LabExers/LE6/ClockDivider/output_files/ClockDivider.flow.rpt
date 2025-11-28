@@ -1,5 +1,5 @@
 Flow report for ClockDivider
-Fri Nov 14 07:08:37 2025
+Fri Nov 28 23:26:59 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,24 +41,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 14 07:08:37 2025       ;
+; Flow Status                        ; Successful - Fri Nov 28 23:26:59 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ClockDivider                                ;
 ; Top-level Entity Name              ; ClockDivider                                ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 46                                          ;
-;     Total combinational functions  ; 46                                          ;
-;     Dedicated logic registers      ; 26                                          ;
+; Total logic elements               ; 47 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 47 / 49,760 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 26 / 49,760 ( < 1 % )                       ;
 ; Total registers                    ; 26                                          ;
-; Total pins                         ; 3                                           ;
+; Total pins                         ; 3 / 360 ( < 1 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
+; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/14/2025 07:08:28 ;
+; Start date & time ; 11/28/2025 23:26:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ClockDivider        ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 1095497978682.176307530731160          ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 176156949477263.176434358819364        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_ClockDivider                   ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_timing_analysis               ;
@@ -110,8 +110,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4845 MB             ; 00:00:24                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:24                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4836 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:11     ; 1.1                     ; 6612 MB             ; 00:00:15                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4694 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 4959 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4648 MB             ; 00:00:01                           ;
+; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -121,6 +125,10 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; LAPTOP-F18HSIJM  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-F18HSIJM  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-F18HSIJM  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-F18HSIJM  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-F18HSIJM  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -128,6 +136,10 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ClockDivider -c ClockDivider
+quartus_fit --read_settings_files=off --write_settings_files=off ClockDivider -c ClockDivider
+quartus_asm --read_settings_files=off --write_settings_files=off ClockDivider -c ClockDivider
+quartus_sta ClockDivider -c ClockDivider
+quartus_eda --read_settings_files=off --write_settings_files=off ClockDivider -c ClockDivider
 
 
 

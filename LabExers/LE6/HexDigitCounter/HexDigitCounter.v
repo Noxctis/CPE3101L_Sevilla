@@ -17,7 +17,7 @@ module HexDigitCounter (
     wire [3:0] count;        // Output from counter
 
     // Instantiate Clock Divider
-    ClockDivider #(.DIV_FACTOR(25_000_000)) clk_div (
+    ClockDivider #(.DIV_FACTOR(12_500_000)) clk_div (
         .clk_in(clk_in),
         .nReset(nReset),
         .clk_out(slow_clk)

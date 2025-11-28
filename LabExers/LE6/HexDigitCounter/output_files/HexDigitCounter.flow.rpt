@@ -1,5 +1,5 @@
 Flow report for HexDigitCounter
-Fri Nov 14 12:39:02 2025
+Sat Nov 29 00:40:11 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 14 12:39:02 2025       ;
+; Flow Status                        ; Successful - Sat Nov 29 00:40:11 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; HexDigitCounter                             ;
-; Top-level Entity Name              ; TopModule                                   ;
+; Top-level Entity Name              ; HexDigitCounter                             ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 54 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 53 / 49,760 ( < 1 % )                       ;
+; Total logic elements               ; 61 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 60 / 49,760 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 30 / 49,760 ( < 1 % )                       ;
 ; Total registers                    ; 30                                          ;
-; Total pins                         ; 13 / 360 ( 4 % )                            ;
+; Total pins                         ; 18 / 360 ( 5 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -67,43 +67,42 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/14/2025 12:38:19 ;
+; Start date & time ; 11/29/2025 00:39:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HexDigitCounter     ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                  ;
-+--------------------------------------+----------------------------------------+-----------------+-------------+-----------------------------------+
-; Assignment Name                      ; Value                                  ; Default Value   ; Entity Name ; Section Id                        ;
-+--------------------------------------+----------------------------------------+-----------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 246906072565578.176309509902240        ; --              ; --          ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --              ; --          ; tb_HexDigitCounter                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --              ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --              ; --          ; eda_timing_analysis               ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --              ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --              ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --              ; --          ; eda_formal_verification           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --              ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_HexDigitCounter                     ; --              ; --          ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --              ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>          ; --          ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --              ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; tb_HexDigitCounter.v                   ; --              ; --          ; tb_HexDigitCounter                ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_HexDigitCounter                     ; --              ; --          ; tb_HexDigitCounter                ;
-; EDA_TEST_BENCH_NAME                  ; tb_HexDigitCounter                     ; --              ; --          ; eda_simulation                    ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --              ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --              ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --              ; --          ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --              ; TopModule   ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --              ; TopModule   ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --              ; TopModule   ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --              ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --              ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --              ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                     ; TopModule                              ; HexDigitCounter ; --          ; --                                ;
-+--------------------------------------+----------------------------------------+-----------------+-------------+-----------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 176156949477263.176434798309492        ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_HexDigitCounter                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_timing_analysis               ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_formal_verification           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_HexDigitCounter                     ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; tb_HexDigitCounter.v                   ; --            ; --          ; tb_HexDigitCounter                ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_HexDigitCounter                     ; --            ; --          ; tb_HexDigitCounter                ;
+; EDA_TEST_BENCH_NAME                  ; tb_HexDigitCounter                     ; --            ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -111,12 +110,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4821 MB             ; 00:00:12                           ;
-; Fitter               ; 00:00:09     ; 1.0                     ; 5922 MB             ; 00:00:09                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4697 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:07     ; 1.0                     ; 4878 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4648 MB             ; 00:00:00                           ;
-; Total                ; 00:00:29     ; --                      ; --                  ; 00:00:25                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4837 MB             ; 00:00:26                           ;
+; Fitter               ; 00:00:09     ; 1.0                     ; 6616 MB             ; 00:00:15                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4695 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4968 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4647 MB             ; 00:00:01                           ;
+; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:47                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -125,11 +124,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LB285T2B         ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; LB285T2B         ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; LB285T2B         ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; LB285T2B         ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LB285T2B         ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-F18HSIJM  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-F18HSIJM  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-F18HSIJM  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-F18HSIJM  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-F18HSIJM  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

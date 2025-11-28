@@ -40,6 +40,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "carry_in",
+					"strict" : false
+				},
+				{
 					"name" : "mode[1]",
 					"strict" : false
 				},

@@ -1,5 +1,5 @@
 Fitter report for FourbitUpDownCounter
-Fri Nov 14 12:45:57 2025
+Fri Nov 28 23:45:05 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Nov 14 12:45:57 2025       ;
+; Fitter Status                      ; Successful - Fri Nov 28 23:45:05 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; FourbitUpDownCounter                        ;
 ; Top-level Entity Name              ; TopModule                                   ;
@@ -151,16 +151,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
-; Maximum used               ; 8           ;
+; Average used               ; 1.05        ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
-;     Processors 3-8         ;   0.3%      ;
+;     Processor 2            ;   0.4%      ;
+;     Processors 3-16        ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -202,7 +202,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in Z:/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/output_files/FourbitUpDownCounter.pin.
+The pin-out file can be found in C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/output_files/FourbitUpDownCounter.pin.
 
 
 +---------------------------------------------------------------------+
@@ -250,7 +250,7 @@ The pin-out file can be found in Z:/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownC
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%    ;
-; Peak interconnect usage (total/H/V)         ; 0.3% / 0.3% / 0.3%    ;
+; Peak interconnect usage (total/H/V)         ; 0.4% / 0.4% / 0.3%    ;
 ; Maximum fan-out                             ; 30                    ;
 ; Highest non-global fan-out                  ; 30                    ;
 ; Total fan-out                               ; 253                   ;
@@ -932,7 +932,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; data_in[0] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; load       ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; count_en   ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; nReset     ; Input    ; (6) 868 ps    ; (6) 868 ps    ; --                    ; --  ; --   ;
+; nReset     ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; up         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; data_in[1] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; data_in[2] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
@@ -958,36 +958,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - FourbitUpDownCounter:counter_inst|count[0]~3  ; 0                 ; 6       ;
 ;      - FourbitUpDownCounter:counter_inst|count[0]~8  ; 0                 ; 6       ;
 ; nReset                                               ;                   ;         ;
-;      - ClockDivider:clk_div_inst|clk_out             ; 0                 ; 6       ;
+;      - ClockDivider:clk_div_inst|clk_out             ; 1                 ; 6       ;
 ;      - FourbitUpDownCounter:counter_inst|count[0]    ; 1                 ; 6       ;
 ;      - FourbitUpDownCounter:counter_inst|count[1]    ; 1                 ; 6       ;
 ;      - FourbitUpDownCounter:counter_inst|count[2]    ; 1                 ; 6       ;
 ;      - FourbitUpDownCounter:counter_inst|count[3]    ; 1                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[24]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[22]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[21]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[23]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[20]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[19]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[18]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[17]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[16]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[14]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[13]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[15]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[12]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[11]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[10]         ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[9]          ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[5]          ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[8]          ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[7]          ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[6]          ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[0]          ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[4]          ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[3]          ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[2]          ; 0                 ; 6       ;
-;      - ClockDivider:clk_div_inst|counter[1]          ; 0                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[23]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[21]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[24]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[22]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[20]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[19]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[18]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[17]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[15]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[13]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[16]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[14]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[12]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[11]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[10]         ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[9]          ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[8]          ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[7]          ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[6]          ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[5]          ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[0]          ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[4]          ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[3]          ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[2]          ; 1                 ; 6       ;
+;      - ClockDivider:clk_div_inst|counter[1]          ; 1                 ; 6       ;
 ; up                                                   ;                   ;         ;
 ;      - FourbitUpDownCounter:counter_inst|count[1]~6  ; 1                 ; 6       ;
 ;      - FourbitUpDownCounter:counter_inst|count[2]~9  ; 1                 ; 6       ;
@@ -1007,7 +1007,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                         ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; ClockDivider:clk_div_inst|clk_out            ; FF_X52_Y24_N29     ; 4       ; Clock        ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; ClockDivider:clk_div_inst|clk_out            ; FF_X41_Y15_N15     ; 4       ; Clock        ; yes    ; Global Clock         ; GCLK16           ; --                        ;
 ; FourbitUpDownCounter:counter_inst|count[0]~8 ; LCCOMB_X51_Y53_N30 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; clk_in                                       ; PIN_P11            ; 26      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
 ; load                                         ; PIN_A14            ; 5       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
@@ -1020,7 +1020,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                              ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; ClockDivider:clk_div_inst|clk_out ; FF_X52_Y24_N29 ; 4       ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
+; ClockDivider:clk_div_inst|clk_out ; FF_X41_Y15_N15 ; 4       ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
 ; clk_in                            ; PIN_P11        ; 26      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
 +-----------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
@@ -1030,15 +1030,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 56 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 5 / 5,382 ( < 1 % )    ;
-; C4 interconnects      ; 29 / 106,704 ( < 1 % ) ;
-; Direct links          ; 24 / 148,641 ( < 1 % ) ;
+; Block interconnects   ; 54 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 6 / 5,382 ( < 1 % )    ;
+; C4 interconnects      ; 28 / 106,704 ( < 1 % ) ;
+; Direct links          ; 19 / 148,641 ( < 1 % ) ;
 ; Global clocks         ; 2 / 20 ( 10 % )        ;
-; Local interconnects   ; 38 / 49,760 ( < 1 % )  ;
+; Local interconnects   ; 41 / 49,760 ( < 1 % )  ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )        ;
-; R24 interconnects     ; 3 / 5,406 ( < 1 % )    ;
-; R4 interconnects      ; 24 / 147,764 ( < 1 % ) ;
+; R24 interconnects     ; 4 / 5,406 ( < 1 % )    ;
+; R4 interconnects      ; 23 / 147,764 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
@@ -1103,18 +1103,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 19                                           ; 0                           ;
 ; 20                                           ; 0                           ;
 ; 21                                           ; 0                           ;
-; 22                                           ; 1                           ;
-; 23                                           ; 0                           ;
+; 22                                           ; 0                           ;
+; 23                                           ; 2                           ;
 ; 24                                           ; 0                           ;
-; 25                                           ; 1                           ;
-; 26                                           ; 1                           ;
+; 25                                           ; 0                           ;
+; 26                                           ; 0                           ;
+; 27                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 6.80) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced Out  (Average = 6.60) ; Number of LABs  (Total = 5) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 1                           ;
@@ -1125,8 +1126,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 6                                               ; 1                           ;
 ; 7                                               ; 0                           ;
 ; 8                                               ; 0                           ;
-; 9                                               ; 0                           ;
-; 10                                              ; 1                           ;
+; 9                                               ; 1                           ;
+; 10                                              ; 0                           ;
 ; 11                                              ; 0                           ;
 ; 12                                              ; 0                           ;
 ; 13                                              ; 1                           ;
@@ -1136,7 +1137,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 9.00) ; Number of LABs  (Total = 5) ;
+; Number of Distinct Inputs  (Average = 8.80) ; Number of LABs  (Total = 5) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
@@ -1148,8 +1149,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
 ; 9                                           ; 1                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 1                           ;
+; 10                                          ; 1                           ;
+; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
@@ -1282,7 +1283,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; clk_in          ; clk_in               ; 5.2               ;
+; clk_in          ; clk_in               ; 5.0               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1293,32 +1294,32 @@ This will disable optimization of problematic paths and expose them for further 
 +---------------------------------------+-----------------------------------+-------------------+
 ; Source Register                       ; Destination Register              ; Delay Added in ns ;
 +---------------------------------------+-----------------------------------+-------------------+
-; ClockDivider:clk_div_inst|clk_out     ; ClockDivider:clk_div_inst|clk_out ; 5.170             ;
-; ClockDivider:clk_div_inst|counter[24] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[22] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[21] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[23] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[20] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[19] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[18] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[17] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[16] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[14] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[13] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[15] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[12] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[11] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[10] ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[9]  ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[8]  ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[7]  ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[5]  ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[6]  ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[4]  ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[3]  ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[2]  ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[0]  ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
-; ClockDivider:clk_div_inst|counter[1]  ; ClockDivider:clk_div_inst|clk_out ; 2.076             ;
+; ClockDivider:clk_div_inst|clk_out     ; ClockDivider:clk_div_inst|clk_out ; 5.020             ;
+; ClockDivider:clk_div_inst|counter[23] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[24] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[21] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[22] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[20] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[19] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[18] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[17] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[15] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[16] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[13] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[14] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[12] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[11] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[10] ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[9]  ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[8]  ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[7]  ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[6]  ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[5]  ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[4]  ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[3]  ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[2]  ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[0]  ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
+; ClockDivider:clk_div_inst|counter[1]  ; ClockDivider:clk_div_inst|clk_out ; 1.950             ;
 +---------------------------------------+-----------------------------------+-------------------+
 Note: This table only shows the top 26 path(s) that have the largest delay added for hold.
 
@@ -1327,7 +1328,7 @@ Note: This table only shows the top 26 path(s) that have the largest delay added
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (119006): Selected device 10M50DAF484C7G for design "FourbitUpDownCounter"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1366,45 +1367,45 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clk_in~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: Z:/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/TopModule.v Line: 3
+Info (176353): Automatically promoted node clk_in~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/TopModule.v Line: 3
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
-Info (176353): Automatically promoted node ClockDivider:clk_div_inst|clk_out  File: Z:/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/clockdivider.v Line: 9
+Info (176353): Automatically promoted node ClockDivider:clk_div_inst|clk_out  File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/clockdivider.v Line: 9
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node ClockDivider:clk_div_inst|clk_out~0 File: Z:/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/clockdivider.v Line: 9
+        Info (176357): Destination node ClockDivider:clk_div_inst|clk_out~0 File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/clockdivider.v Line: 9
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X45_Y44 to location X55_Y54
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y11 to location X44_Y21
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.10 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file Z:/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/output_files/FourbitUpDownCounter.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/output_files/FourbitUpDownCounter.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5930 megabytes
-    Info: Processing ended: Fri Nov 14 12:46:00 2025
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 6613 megabytes
+    Info: Processing ended: Fri Nov 28 23:45:05 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in Z:/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/output_files/FourbitUpDownCounter.fit.smsg.
+The suppressed messages can be found in C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE6/FourbitUpDownCounter/output_files/FourbitUpDownCounter.fit.smsg.
 
 
