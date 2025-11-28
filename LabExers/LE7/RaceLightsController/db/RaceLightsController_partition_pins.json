@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RED",
+					"strict" : false
+				},
+				{
+					"name" : "YELLOW",
+					"strict" : false
+				},
+				{
+					"name" : "GREEN",
+					"strict" : false
+				},
+				{
+					"name" : "SW_START",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_nRESET",
+					"strict" : false
+				},
+				{
+					"name" : "CLK50MHZ",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

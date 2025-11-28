@@ -1,0 +1,85 @@
+|Top
+CLK50MHZ => CLK50MHZ.IN1
+BTN_nRESET => BTN_nRESET.IN2
+SW_START => SW_START.IN1
+RED << RaceLightsController:u_ctrl.RED
+YELLOW << RaceLightsController:u_ctrl.YELLOW
+GREEN << RaceLightsController:u_ctrl.GREEN
+
+
+|Top|ClockDivider:u_div
+clk_in => clk_out~reg0.CLK
+clk_in => counter[0].CLK
+clk_in => counter[1].CLK
+clk_in => counter[2].CLK
+clk_in => counter[3].CLK
+clk_in => counter[4].CLK
+clk_in => counter[5].CLK
+clk_in => counter[6].CLK
+clk_in => counter[7].CLK
+clk_in => counter[8].CLK
+clk_in => counter[9].CLK
+clk_in => counter[10].CLK
+clk_in => counter[11].CLK
+clk_in => counter[12].CLK
+clk_in => counter[13].CLK
+clk_in => counter[14].CLK
+clk_in => counter[15].CLK
+clk_in => counter[16].CLK
+clk_in => counter[17].CLK
+clk_in => counter[18].CLK
+clk_in => counter[19].CLK
+clk_in => counter[20].CLK
+clk_in => counter[21].CLK
+clk_in => counter[22].CLK
+clk_in => counter[23].CLK
+clk_in => counter[24].CLK
+nReset => clk_out~reg0.ACLR
+nReset => counter[0].ACLR
+nReset => counter[1].ACLR
+nReset => counter[2].ACLR
+nReset => counter[3].ACLR
+nReset => counter[4].ACLR
+nReset => counter[5].ACLR
+nReset => counter[6].ACLR
+nReset => counter[7].ACLR
+nReset => counter[8].ACLR
+nReset => counter[9].ACLR
+nReset => counter[10].ACLR
+nReset => counter[11].ACLR
+nReset => counter[12].ACLR
+nReset => counter[13].ACLR
+nReset => counter[14].ACLR
+nReset => counter[15].ACLR
+nReset => counter[16].ACLR
+nReset => counter[17].ACLR
+nReset => counter[18].ACLR
+nReset => counter[19].ACLR
+nReset => counter[20].ACLR
+nReset => counter[21].ACLR
+nReset => counter[22].ACLR
+nReset => counter[23].ACLR
+nReset => counter[24].ACLR
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|RaceLightsController:u_ctrl
+CLOCK => timer[0].CLK
+CLOCK => timer[1].CLK
+CLOCK => timer[2].CLK
+CLOCK => timer[3].CLK
+CLOCK => state~1.DATAIN
+nRESET => timer[0].ACLR
+nRESET => timer[1].ACLR
+nRESET => timer[2].ACLR
+nRESET => timer[3].ACLR
+nRESET => state~3.DATAIN
+START => next_state.OUTPUTSELECT
+START => next_state.OUTPUTSELECT
+START => next_state.OUTPUTSELECT
+START => next_state.OUTPUTSELECT
+RED <= RED.DB_MAX_OUTPUT_PORT_TYPE
+YELLOW <= YELLOW.DB_MAX_OUTPUT_PORT_TYPE
+GREEN <= GREEN.DB_MAX_OUTPUT_PORT_TYPE
+
+

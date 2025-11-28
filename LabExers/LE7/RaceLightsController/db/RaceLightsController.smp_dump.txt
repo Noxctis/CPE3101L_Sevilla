@@ -1,0 +1,7 @@
+
+State Machine - |Top|RaceLightsController:u_ctrl|state
+Name state.S_GREEN_HOLD state.S_YELLOW_HOLD state.S_RED_HOLD state.S_RED_IDLE 
+state.S_RED_IDLE 0 0 0 0 
+state.S_RED_HOLD 0 0 1 1 
+state.S_YELLOW_HOLD 0 1 0 1 
+state.S_GREEN_HOLD 1 0 0 1 
