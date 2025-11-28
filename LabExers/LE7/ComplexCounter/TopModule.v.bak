@@ -1,0 +1,35 @@
+
+module Top (
+    input  wire CLK50MHZ,   // board 50 MHz
+    input  wire BTN_nRESET, // pushbutton (active-low)
+    input  wire SW_M,       // mode switch
+    output wire [2:0] LED   // display COUNT
+);
+    wire slow_clk;
+
+    // Divide 50MHz to human-visible rate (e.g., ~2Hz)
+    ClockDivider #(.DIV_FACTOR(25_000_000)) u_div (
+        .clk_in (CLK50MHZ),
+        .nReset (BTN_nRESET),    // async reset OK for divider
+        .clk_out(slow_clk)
+    );
+
+    // Optional: synchronize/debounce BTN_nRESET and SW_M for clean sampling.
+    // Simple 2FF synchronizer (no debounce shown for brevity)
+    reg [1:0] sr_reset;
+    reg [1:0] sr_m;
+    always @(posedge slow_clk) begin
+        sr_reset <= {sr_reset[0], BTN_nRESET};
+        sr_m     <= {sr_m[0], SW_M};
+    end
+    wire nRESET_sync = sr_reset[1];
+    wire M_sync      = sr_m[1];
+
+    // Counter (negative-edge)
+    ComplexCounter3bit u_cnt (
+        .CLOCK (slow_clk),
+        .nRESET(nRESET_sync),
+        .M     (M_sync),
+        .COUNT (LED)
+    );
+endmodule

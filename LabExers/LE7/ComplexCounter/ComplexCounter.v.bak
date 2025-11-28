@@ -1,0 +1,47 @@
+
+//------------------------------------------------------------------------------
+// Complex 3-bit Moore FSM Counter with Mode Control (Binary / Gray)
+// CLOCK: negative-edged; nRESET: synchronous active-low
+// Output COUNT is the Moore state (3-bit).
+//------------------------------------------------------------------------------
+module ComplexCounter3bit (
+    input  wire        CLOCK,   // negative-edged
+    input  wire        nRESET,  // synchronous active-low
+    input  wire        M,       // 0=binary, 1=gray
+    output wire [2:0]  COUNT    // Moore output (state)
+);
+    // Moore state register
+    reg [2:0] state, next_state;
+
+    assign COUNT = state;
+
+    // Combinational next-state logic
+    always @* begin
+        if (M == 1'b0) begin
+            // Binary successor (mod-8)
+            next_state = state + 3'b001;
+        end else begin
+            // Gray successor mapping
+            case (state)
+                3'b000: next_state = 3'b001;
+                3'b001: next_state = 3'b011;
+                3'b011: next_state = 3'b010;
+                3'b010: next_state = 3'b110;
+                3'b110: next_state = 3'b111;
+                3'b111: next_state = 3'b101;
+                3'b101: next_state = 3'b100;
+                3'b100: next_state = 3'b000;
+                default: next_state = 3'b000; // safety
+            endcase
+        end
+    end
+
+    // Negative-edge clocked, synchronous active-low reset
+    always @(negedge CLOCK) begin
+        if (!nRESET) begin
+            state <= 3'b000;   // reset to 000
+        end else begin
+            state <= next_state;
+        end
+    end
+endmodule
