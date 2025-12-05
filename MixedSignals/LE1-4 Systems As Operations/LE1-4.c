@@ -39,12 +39,8 @@ int main(void)
         return -1;
     }
 
-    // Header for the CSV/Data file (optional, makes it easier to read in Excel)
     fprintf(fp, "Time\t\t\tNumeric\t\t\tAnalytic\n");
 
-    // Loop from t=0 to t=5 (which is way past 5*tau = 0.1s, but follows the blueprint)
-    // Note: Since tau = 0.02s, steady state is reached very quickly (at 0.1s).
-    // The loop to 5.0 will show a long steady state line.
     for (t = 0; t < 5.0; t += dt) { 
         fprintf(fp, "%e\t%e\t%e\n", t, x, Vc(t));
         x = Euler(DE, x, u);
