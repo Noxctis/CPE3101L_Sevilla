@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter/simulation/modelsim
+vCustomSeqCounter
+Z1 !s110 1765495728
+!i10b 1
+!s100 10Dkk=GlIcAnT0SA3ATHT1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IIbc[U1O`7^ZMf<cVi>8VV3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1765495650
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter/CustomSeqCounter.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter/CustomSeqCounter.v
+!i122 0
+L0 24 101
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1765495727.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter/CustomSeqCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter/CustomSeqCounter.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter}
+Z7 tCvgOpt 0
+n@custom@seq@counter
+vtb_CustomSeqCounter
+R1
+!i10b 1
+!s100 4=:gG6gkkhb`gNfDj?2PT1
+R2
+I0>o_U]Z^REk5?0;03dAGQ0
+R3
+R0
+w1765495686
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter/tb_CustomSeqCounter.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter/tb_CustomSeqCounter.v
+!i122 1
+L0 7 58
+R4
+r1
+!s85 0
+31
+!s108 1765495728.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter/tb_CustomSeqCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/CustomSeqCounter/tb_CustomSeqCounter.v|
+!i113 1
+R5
+R6
+R7
+ntb_@custom@seq@counter

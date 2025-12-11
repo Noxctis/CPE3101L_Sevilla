@@ -1,0 +1,46 @@
+|CustomSeqCounter
+Clk => Q[0]~reg0.CLK
+Clk => Q[1]~reg0.CLK
+Clk => Q[2]~reg0.CLK
+Clk => Q[3]~reg0.CLK
+Clk => idx[0].CLK
+Clk => idx[1].CLK
+Clk => idx[2].CLK
+nReset => Q[0]~reg0.ACLR
+nReset => Q[1]~reg0.ACLR
+nReset => Q[2]~reg0.ACLR
+nReset => Q[3]~reg0.ACLR
+nReset => idx[0].ACLR
+nReset => idx[1].ACLR
+nReset => idx[2].ACLR
+load => idx.OUTPUTSELECT
+load => idx.OUTPUTSELECT
+load => idx.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+count_en => idx.OUTPUTSELECT
+count_en => idx.OUTPUTSELECT
+count_en => idx.OUTPUTSELECT
+count_en => Q.OUTPUTSELECT
+count_en => Q.OUTPUTSELECT
+count_en => Q.OUTPUTSELECT
+count_en => Q.OUTPUTSELECT
+up => idx.OUTPUTSELECT
+up => idx.OUTPUTSELECT
+up => idx.OUTPUTSELECT
+up => Q.OUTPUTSELECT
+up => Q.OUTPUTSELECT
+up => Q.OUTPUTSELECT
+up => Q.OUTPUTSELECT
+data_in[0] => Decoder0.IN3
+data_in[1] => Decoder0.IN2
+data_in[2] => Decoder0.IN1
+data_in[3] => Decoder0.IN0
+Q[0] << Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] << Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] << Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] << Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

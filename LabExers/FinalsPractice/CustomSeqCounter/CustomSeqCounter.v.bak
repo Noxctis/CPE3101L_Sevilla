@@ -1,0 +1,91 @@
+
+//------------------------------------------------------------------------------
+// SeqCounter_LoadUD.v
+// Sequence counter with parallel load, up/down, and data_in.
+// - Clk: posedge
+// - nReset: active-low asynchronous reset
+// - load: parallel load to a sequence element
+// - up: direction (1 = forward, 0 = reverse)
+// - count_en: enable stepping
+// - data_in[WIDTH-1:0]: value to load (must match one of the sequence entries)
+//------------------------------------------------------------------------------
+// EDIT HERE: set WIDTH to 4 for 4-bit outputs, or 6 for 6-bit outputs, etc.
+module CustomSeqCounter #(
+    parameter integer WIDTH   = 4,   // <-- EDIT HERE (4-bit or 6-bit, etc.)
+    parameter integer SEQ_LEN = 7    // <-- EDIT HERE (number of entries below)
+) (
+    input  wire                 Clk,        // positive-edge clock
+    input  wire                 nReset,     // active-low async reset
+    input  wire                 load,       // parallel load
+    input  wire                 count_en,   // enable step
+    input  wire                 up,         // 1 = forward, 0 = reverse
+    input  wire [WIDTH-1:0]     data_in,    // value to load (must be in sequence)
+    output reg  [WIDTH-1:0]     Q           // current output
+);
+
+    // Compute index width from SEQ_LEN. Many tools support $clog2 (SystemVerilog).
+    // If your compiler complains, set IDXW manually (e.g., 3 for up to 8 entries).
+    localparam integer IDXW = $clog2(SEQ_LEN); // <-- If this errors, replace with: localparam integer IDXW = 3;
+
+    // Index into the sequence list
+    reg [IDXW-1:0] idx;
+
+    // Map index → sequence value
+    // EDIT HERE: This is your custom sequence. Use WIDTH'dN sized constants so width changes are painless.
+    // Example sequence (4-bit values): 0 → 2 → 3 → 6 → 8 → 9 → 15
+    function [WIDTH-1:0] seq_val;
+        input [IDXW-1:0] i;
+        begin
+            case (i)
+                // EDIT HERE: Update values & add/remove entries to match SEQ_LEN
+                0: seq_val = WIDTH'd0;   // 0
+                1: seq_val = WIDTH'd2;   // 2
+                2: seq_val = WIDTH'd3;   // 3
+                3: seq_val = WIDTH'd6;   // 6
+                4: seq_val = WIDTH'd8;   // 8
+                5: seq_val = WIDTH'd9;   // 9
+                6: seq_val = WIDTH'd15;  // 15
+                default: seq_val = {WIDTH{1'b0}}; // safety default
+            endcase
+        end
+    endfunction
+
+    // Map value → index (reverse lookup for load)
+    // EDIT HERE: Keep this table consistent with seq_val above
+    function [IDXW-1:0] val_to_idx;
+        input [WIDTH-1:0] v;
+        begin
+            case (v)
+                WIDTH'd0  : val_to_idx = IDXW'(0);
+                WIDTH'd2  : val_to_idx = IDXW'(1);
+                WIDTH'd3  : val_to_idx = IDXW'(2);
+                WIDTH'd6  : val_to_idx = IDXW'(3);
+                WIDTH'd8  : val_to_idx = IDXW'(4);
+                WIDTH'd9  : val_to_idx = IDXW'(5);
+                WIDTH'd15 : val_to_idx = IDXW'(6);
+                default   : val_to_idx = IDXW'(0); // not found → fall back to index 0
+            endcase
+        end
+    endfunction
+
+    // Sequential control: async reset, load, up/down step
+    always @(posedge Clk or negedge nReset) begin
+        if (!nReset) begin
+            idx <= {IDXW{1'b0}};             // reset index to first entry
+            Q   <= seq_val({IDXW{1'b0}});    // Q = first sequence value
+        end else if (load) begin
+            idx <= val_to_idx(data_in);      // align index to loaded value
+            Q   <= seq_val(val_to_idx(data_in));
+        end else if (count_en) begin
+            if (up) begin
+                idx <= (idx == SEQ_LEN-1) ? {IDXW{1'b0}} : (idx + IDXW'(1));
+                Q   <= seq_val((idx == SEQ_LEN-1) ? {IDXW{1'b0}} : (idx + IDXW'(1)));
+            end else begin
+                idx <= (idx == {IDXW{1'b0}}) ? (SEQ_LEN-1) : (idx - IDXW'(1));
+                Q   <= seq_val((idx == {IDXW{1'b0}}) ? (SEQ_LEN-1) : (idx - IDXW'(1)));
+            end
+        end
+        // else: hold idx and Q
+    end
+
+endmodule
