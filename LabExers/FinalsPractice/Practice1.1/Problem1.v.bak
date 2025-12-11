@@ -1,0 +1,27 @@
+
+//------------------------------------------------------------------------------
+// Problem1_Even.v
+// Running even-parity sequential circuit (behavioral)
+// CLK: positive-edge triggered; reset: asynchronous, active-high
+// Output P_even is 1 when number of 1s so far is even.
+//------------------------------------------------------------------------------
+module Problem1_Even (
+    input  wire D_in,
+    input  wire CLK,
+    input  wire reset,
+    output wire P_even
+);
+
+    reg Q;
+
+    always @(posedge CLK or posedge reset) begin
+        if (reset) begin
+            Q <= 1'b1;          // start at EVEN → even parity output = 1
+        end else begin
+            Q <= Q ^ D_in;      // same toggle/hold rule
+        end
+    end
+
+    assign P_even = Q;
+
+endmodule
