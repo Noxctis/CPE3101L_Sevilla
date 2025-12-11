@@ -1,0 +1,71 @@
+# Reading pref.tcl
+# do OddUpDownCounterN_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/OddUpDownCounterN.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:02:51 on Dec 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/OddUpDownCounterN.v 
+# -- Compiling module OddUpDownCounterN
+# 
+# Top level modules:
+# 	OddUpDownCounterN
+# End time: 07:02:51 on Dec 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/tb_OddUpDownCounterN.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:02:51 on Dec 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/tb_OddUpDownCounterN.v 
+# -- Compiling module tb_OddUpDownCounterN
+# 
+# Top level modules:
+# 	tb_OddUpDownCounterN
+# End time: 07:02:51 on Dec 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_OddUpDownCounterN
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_OddUpDownCounterN 
+# Start time: 07:02:52 on Dec 12,2025
+# Loading work.tb_OddUpDownCounterN
+# Loading work.OddUpDownCounterN
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# time  Clk nRst En Up | Q
+#    0   0   0   0  1 | 01
+# 5000   1   0   0  1 | 01
+# 10000   0   0   0  1 | 01
+# 15000   1   1   1  1 | 01
+# 20000   0   1   1  1 | 01
+# 25000   1   1   0  1 | 03
+# 30000   0   1   0  1 | 03
+# 35000   1   1   1  0 | 03
+# 40000   0   1   1  0 | 03
+# 45000   1   1   0  0 | 01
+# 50000   0   1   0  0 | 01
+# 55000   1   1   1  1 | 01
+# 60000   0   1   1  1 | 01
+# 65000   1   1   1  1 | 03
+# 70000   0   1   1  1 | 03
+# 75000   1   1   1  1 | 05
+# 80000   0   1   1  1 | 05
+# 85000   1   1   1  1 | 07
+# 90000   0   1   1  1 | 07
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/tb_OddUpDownCounterN.v(47)
+#    Time: 95 ns  Iteration: 1  Instance: /tb_OddUpDownCounterN
+# Break in Module tb_OddUpDownCounterN at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/tb_OddUpDownCounterN.v line 47
+# End time: 07:04:10 on Dec 12,2025, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 0

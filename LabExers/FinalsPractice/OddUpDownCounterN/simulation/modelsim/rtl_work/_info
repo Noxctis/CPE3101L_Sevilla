@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/simulation/modelsim
+vOddUpDownCounterN
+Z1 !s110 1765494171
+!i10b 1
+!s100 okhma=d=4Xi9]efl1gEHi3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IiIAmbD]I:gM=OVA7^Y9gY3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1765493980
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/OddUpDownCounterN.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/OddUpDownCounterN.v
+!i122 0
+L0 7 18
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1765494171.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/OddUpDownCounterN.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/OddUpDownCounterN.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN}
+Z8 tCvgOpt 0
+n@odd@up@down@counter@n
+vtb_OddUpDownCounterN
+R1
+!i10b 1
+!s100 >RZUj]h`=TmF_UKVlN6F^1
+R2
+I4oO=c_NH8L;8RfA=Lc[OI0
+R3
+R0
+w1765494097
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/tb_OddUpDownCounterN.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/tb_OddUpDownCounterN.v
+!i122 1
+L0 3 48
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/tb_OddUpDownCounterN.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/OddUpDownCounterN/tb_OddUpDownCounterN.v|
+!i113 1
+R6
+R7
+R8
+ntb_@odd@up@down@counter@n

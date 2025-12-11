@@ -1,0 +1,73 @@
+# Reading pref.tcl
+# do EvenUpDownCounterN_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/EvenUpDownCounterN {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/EvenUpDownCounterN/EvenUpDownCounterN.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:59:56 on Dec 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/EvenUpDownCounterN" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/EvenUpDownCounterN/EvenUpDownCounterN.v 
+# -- Compiling module EvenUpDownCounterN
+# 
+# Top level modules:
+# 	EvenUpDownCounterN
+# End time: 06:59:56 on Dec 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/EvenUpDownCounterN {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/EvenUpDownCounterN/tb_EvenUpDownCounterN.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:59:56 on Dec 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/EvenUpDownCounterN" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/EvenUpDownCounterN/tb_EvenUpDownCounterN.v 
+# -- Compiling module tb_EvenUpDownCounterN
+# 
+# Top level modules:
+# 	tb_EvenUpDownCounterN
+# End time: 06:59:56 on Dec 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_EvenUpDownCounterN
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_EvenUpDownCounterN 
+# Start time: 06:59:57 on Dec 12,2025
+# Loading work.tb_EvenUpDownCounterN
+# Loading work.EvenUpDownCounterN
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# time  Clk Rst En Up | Q
+#    0   0   1  0  1 | 00
+# 5000   1   1  0  1 | 00
+# 10000   0   1  0  1 | 00
+# 15000   1   0  1  1 | 00
+# 20000   0   0  1  1 | 00
+# 25000   1   0  0  1 | 02
+# 30000   0   0  0  1 | 02
+# 35000   1   0  1  0 | 02
+# 40000   0   0  1  0 | 02
+# 45000   1   0  0  0 | 00
+# 50000   0   0  0  0 | 00
+# 55000   1   0  1  1 | 00
+# 60000   0   0  1  1 | 00
+# 65000   1   0  1  1 | 02
+# 70000   0   0  1  1 | 02
+# 75000   1   0  1  1 | 04
+# 80000   0   0  1  1 | 04
+# 85000   1   0  1  1 | 06
+# 90000   0   0  1  1 | 06
+# 95000   1   0  1  1 | 08
+# 100000   0   0  1  1 | 08
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/EvenUpDownCounterN/tb_EvenUpDownCounterN.v(61)
+#    Time: 105 ns  Iteration: 1  Instance: /tb_EvenUpDownCounterN
+# Break in Module tb_EvenUpDownCounterN at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/EvenUpDownCounterN/tb_EvenUpDownCounterN.v line 61
+# End time: 07:01:16 on Dec 12,2025, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 0
