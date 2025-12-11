@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch/simulation/modelsim
+vD_Latch
+Z1 !s110 1765491997
+!i10b 1
+!s100 UCY:@6_aozEZ041@Y4AGm0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IBefUmP`SWkbnYnLT6G<`X3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1765491706
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch/D_Latch.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch/D_Latch.v
+!i122 0
+L0 3 19
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1765491997.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch/D_Latch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch/D_Latch.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch}
+Z8 tCvgOpt 0
+n@d_@latch
+vtb_D_Latch
+R1
+!i10b 1
+!s100 V>7:?i;>Ph7EzUU6N28fA2
+R2
+ILQI87Ae:1N`>GAo@gB7ao1
+R3
+R0
+w1765491856
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch/tb_D_Latch.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch/tb_D_Latch.v
+!i122 1
+L0 7 64
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch/tb_D_Latch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_Latch/tb_D_Latch.v|
+!i113 1
+R6
+R7
+R8
+ntb_@d_@latch

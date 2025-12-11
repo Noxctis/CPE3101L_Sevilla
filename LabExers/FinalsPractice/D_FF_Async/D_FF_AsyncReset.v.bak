@@ -1,0 +1,13 @@
+
+// D_FF.v — Positive-edge triggered D flip-flop with async active-high reset
+module D_FF_AsyncReset (
+    input  wire Clk,
+    input  wire Reset,
+    input  wire D,
+    output reg  Q
+);
+    always @(posedge Clk or posedge Reset) begin
+        if (Reset) Q <= 1'b0;  // async clear
+        else       Q <= D;     // sample D at rising edge
+    end
+endmodule

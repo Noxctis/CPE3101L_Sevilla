@@ -1,0 +1,30 @@
+
+`timescale 1ns/1ps
+module tb_D_Latch;
+    reg Clk, Reset, D;
+    wire Q;
+
+    D_Latch UUT (.Clk(Clk), .Reset(Reset), .D(D), .Q(Q));
+
+    initial begin
+        // Stimulus
+        Clk = 0; Reset = 1; D = 0; #10;
+        Reset = 0;
+
+        // Clk=1 → transparent
+        Clk = 1; D = 1; #10;   // Q should follow D → 1
+        D = 0; #10;            // Q should follow D → 0
+
+        // Clk=0 → hold
+        Clk = 0; D = 1; #10;   // Q holds previous (0)
+
+        // Async reset kicks in immediately
+        Reset = 1; #5;         // Q clears to 0
+        Reset = 0; #5;
+
+        // Back to transparent
+        Clk = 1; D = 1; #10;   // Q → 1
+
+        $stop;
+    end
+endmodule

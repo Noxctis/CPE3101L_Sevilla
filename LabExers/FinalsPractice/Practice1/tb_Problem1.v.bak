@@ -1,0 +1,48 @@
+
+//------------------------------------------------------------------------------
+// tb_Problem1.v (optional)
+//------------------------------------------------------------------------------
+`timescale 1ns/1ps
+module tb_Problem1;
+
+    reg D_in, CLK, reset;
+    wire P_odd;
+
+    Problem1 UUT (
+        .D_in(D_in),
+        .CLK(CLK),
+        .reset(reset),
+        .P_odd(P_odd)
+    );
+
+    // Clock: 10 ns period
+    initial begin
+        CLK = 1'b0;
+        forever #5 CLK = ~CLK;
+    end
+
+    initial begin
+        $display("t\treset D_in P_odd");
+        $monitor("%0t\t%b\t%b\t%b", $time, reset, D_in, P_odd);
+
+        // Init + async reset
+        reset = 1; D_in = 0; #12;   // assert reset across a few edges
+        reset = 0;
+
+        // Apply a bitstream: 1,0,1,1,0 (parity should go 1,1,0,1,1)
+        @(posedge CLK); D_in = 1;   // parity toggles to 1
+        @(posedge CLK); D_in = 0;   // parity holds at 1
+        @(posedge CLK); D_in = 1;   // parity toggles to 0
+        @(posedge CLK); D_in = 1;   // parity toggles to 1
+        @(posedge CLK); D_in = 0;   // parity holds at 1
+
+        // Async reset test
+        #3 reset = 1;               // immediate clear to 0
+        #7 reset = 0;
+
+        @(posedge CLK); D_in = 1;   // parity toggles to 1 again
+
+        $stop;
+    end
+
+endmodule

@@ -1,0 +1,32 @@
+
+//------------------------------------------------------------------------------
+// Problem1.v
+// Running odd-parity detector (sequential circuit)
+// CLK: posedge triggered; reset: asynchronous, active-high
+// Output P_odd is the stored running odd parity of D_in.
+// Author: Chrys Sean T. Sevilla (Group 4, CPE 3101L, 10:30AM - 1:30PM)
+//------------------------------------------------------------------------------
+module Problem1 (
+    input  wire D_in,    // serial data input
+    input  wire CLK,     // positive-edge triggered clock
+    input  wire reset,   // asynchronous active-high reset
+    output wire P_odd    // output: running odd parity
+);
+
+    // State register
+    reg Q;               // internal flip-flop state; exposed as P_odd
+
+    // Async active-high reset, posedge clock
+    always @(posedge CLK or posedge reset) begin
+        if (reset) begin
+            Q <= 1'b0;                    // reset to even parity baseline
+        end else begin
+            // Next state: XOR of incoming bit and current parity
+            // If D_in=1 -> toggle parity; if D_in=0 -> hold parity
+            Q <= D_in ^ Q;
+        end
+    end
+
+    // Output mapping
+    assign P_odd = Q;
+

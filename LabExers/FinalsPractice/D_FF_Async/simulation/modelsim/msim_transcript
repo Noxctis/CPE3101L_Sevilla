@@ -1,0 +1,75 @@
+# Reading pref.tcl
+# do D_FF_AsyncReset_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Async {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Async/D_FF_AsyncReset.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:44:23 on Dec 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Async" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Async/D_FF_AsyncReset.v 
+# -- Compiling module D_FF_AsyncReset
+# 
+# Top level modules:
+# 	D_FF_AsyncReset
+# End time: 06:44:23 on Dec 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Async {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Async/tb_D_FF_AsyncReset.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:44:23 on Dec 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Async" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Async/tb_D_FF_AsyncReset.v 
+# -- Compiling module tb_D_FF_AsyncReset
+# 
+# Top level modules:
+# 	tb_D_FF_AsyncReset
+# End time: 06:44:23 on Dec 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_D_FF_AsyncReset
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_D_FF_AsyncReset 
+# Start time: 06:44:23 on Dec 12,2025
+# Loading work.tb_D_FF_AsyncReset
+# Loading work.D_FF_AsyncReset
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting simulation at 0 ns...
+# Time =  0 ns	 Clk = 0	 nReset = 1	 D = 1	 Q = x
+# Time =  4 ns	 Clk = 0	 nReset = 0	 D = 1	 Q = 0
+# Time =  5 ns	 Clk = 1	 nReset = 0	 D = 1	 Q = 0
+# Time = 10 ns	 Clk = 0	 nReset = 0	 D = 1	 Q = 0
+# Time = 12 ns	 Clk = 0	 nReset = 0	 D = 0	 Q = 0
+# Time = 14 ns	 Clk = 0	 nReset = 1	 D = 0	 Q = 0
+# Time = 15 ns	 Clk = 1	 nReset = 1	 D = 0	 Q = 0
+# Time = 20 ns	 Clk = 0	 nReset = 1	 D = 0	 Q = 0
+# Time = 22 ns	 Clk = 0	 nReset = 1	 D = 1	 Q = 0
+# Time = 25 ns	 Clk = 1	 nReset = 1	 D = 1	 Q = 1
+# Time = 30 ns	 Clk = 0	 nReset = 1	 D = 1	 Q = 1
+# Time = 32 ns	 Clk = 0	 nReset = 1	 D = 0	 Q = 1
+# Time = 35 ns	 Clk = 1	 nReset = 1	 D = 0	 Q = 0
+# Time = 39 ns	 Clk = 1	 nReset = 0	 D = 0	 Q = 0
+# Time = 40 ns	 Clk = 0	 nReset = 0	 D = 0	 Q = 0
+# Time = 44 ns	 Clk = 0	 nReset = 0	 D = 1	 Q = 0
+# Time = 45 ns	 Clk = 1	 nReset = 0	 D = 1	 Q = 0
+# Time = 49 ns	 Clk = 1	 nReset = 1	 D = 1	 Q = 0
+# Time = 50 ns	 Clk = 0	 nReset = 1	 D = 1	 Q = 0
+# Time = 55 ns	 Clk = 1	 nReset = 1	 D = 1	 Q = 1
+# Time = 60 ns	 Clk = 0	 nReset = 1	 D = 1	 Q = 1
+# Time = 65 ns	 Clk = 1	 nReset = 1	 D = 1	 Q = 1
+# Finished simulation at 69 ns.
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Async/tb_D_FF_AsyncReset.v(39)
+#    Time: 69 ns  Iteration: 0  Instance: /tb_D_FF_AsyncReset
+# Break in Module tb_D_FF_AsyncReset at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Async/tb_D_FF_AsyncReset.v line 39
+# End time: 06:45:35 on Dec 12,2025, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 0

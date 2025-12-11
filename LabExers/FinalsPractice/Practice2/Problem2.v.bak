@@ -1,0 +1,41 @@
+
+//------------------------------------------------------------------------------
+// Problem2.v
+// 4-bit Universal Shift Register with 3-bit control (A)
+// CLK: posedge triggered; reset: asynchronous, active-high
+// Control Table:
+// 000 Hold       | 001 Shift Left (LSB <= SRI) | 010 Shift Right (MSB <= SLI)
+// 011 Sync Clear | 100 Sync Preset             | 101 Count Up
+// 110 Count Down | 111 Load
+// Author: Chrys Sean T. Sevilla (Group 4, CPE 3101L, 10:30AM - 1:30PM)
+//------------------------------------------------------------------------------
+module Problem2 (
+    input  wire       CLK,     // positive-edge triggered clock
+    input  wire       reset,   // asynchronous active-high reset
+    input  wire [2:0] A,       // 3-bit control
+    input  wire [3:0] D,       // parallel load data
+    input  wire       SRI,     // right-shift serial input (into LSB on shift-left)
+    input  wire       SLI,     // left-shift serial input (into MSB on shift-right)
+    output reg  [3:0] Q        // register output
+);
+
+    // Async reset + sync operations
+    always @(posedge CLK or posedge reset) begin
+        if (reset) begin
+            Q <= 4'b0000; // asynchronous clear
+        end else begin
+            case (A)
+                3'b000: Q <= Q;                        // Hold state
+                3'b001: Q <= {Q[2:0], SRI};            // Shift Left (MSB drops, LSB gets SRI)
+                3'b010: Q <= {SLI, Q[3:1]};            // Shift Right (LSB drops, MSB gets SLI)
+                3'b011: Q <= 4'b0000;                  // Synchronous Clear
+                3'b100: Q <= 4'b1111;                  // Synchronous Preset (all ones)
+                3'b101: Q <= Q + 4'd1;                 // Count Up (mod-16)
+                3'b110: Q <= Q - 4'd1;                 // Count Down (mod-16)
+                3'b111: Q <= D;                        // Parallel Load
+                default: Q <= Q;                       // Defensive hold
+            endcase
+        end
+    end
+
+endmodule

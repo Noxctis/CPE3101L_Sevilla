@@ -1,0 +1,7 @@
+|Problem1
+D_in => Q.ENA
+CLK => Q.CLK
+reset => Q.ACLR
+P_odd <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

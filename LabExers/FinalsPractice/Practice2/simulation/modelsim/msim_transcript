@@ -1,0 +1,64 @@
+# Reading pref.tcl
+# do Problem2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/Practice2 {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/Practice2/Problem2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:13:16 on Dec 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/Practice2" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/Practice2/Problem2.v 
+# -- Compiling module Problem2
+# 
+# Top level modules:
+# 	Problem2
+# End time: 06:13:16 on Dec 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/Practice2 {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/Practice2/tb_Problem2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:13:16 on Dec 12,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/Practice2" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/Practice2/tb_Problem2.v 
+# -- Compiling module tb_Problem2
+# 
+# Top level modules:
+# 	tb_Problem2
+# End time: 06:13:16 on Dec 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Problem2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Problem2 
+# Start time: 06:13:17 on Dec 12,2025
+# Loading work.tb_Problem2
+# Loading work.Problem2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# time  rst  A    D     RSI LSI | Q
+#    0  1   000  000000  0   0  | 000000
+# 15000  0   111  101010  0   0  | 000000
+# 25000  0   000  101010  0   0  | 101010
+# 35000  0   001  101010  1   0  | 101010
+# 45000  0   001  101010  0   0  | 010101
+# 55000  0   010  101010  0   1  | 101010
+# 65000  0   010  101010  0   0  | 110101
+# 75000  0   011  101010  0   0  | 011010
+# 85000  0   100  101010  0   0  | 000000
+# 95000  0   101  101010  0   0  | 111111
+# 105000  0   110  101010  0   0  | 000000
+# 115000  0   000  101010  0   0  | 111111
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/Practice2/tb_Problem2.v(85)
+#    Time: 125 ns  Iteration: 1  Instance: /tb_Problem2
+# Break in Module tb_Problem2 at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/Practice2/tb_Problem2.v line 85
+# End time: 06:13:36 on Dec 12,2025, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0

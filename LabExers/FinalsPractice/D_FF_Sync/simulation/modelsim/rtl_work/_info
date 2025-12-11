@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync/simulation/modelsim
+vD_FF_SyncReset
+!s110 1765492885
+!i10b 1
+!s100 XcWX?JJ3z:9<XHA1nMgGE1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZL>fLazHbnmHSYWUH:4<]0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1765492535
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync/D_FF_SyncReset.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync/D_FF_SyncReset.v
+!i122 0
+L0 2 13
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1765492885.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync/D_FF_SyncReset.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync/D_FF_SyncReset.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync}
+Z7 tCvgOpt 0
+n@d_@f@f_@sync@reset
+vtb_D_FF_SyncReset
+!s110 1765492886
+!i10b 1
+!s100 X<Y8PEoe7F7;>X`CkQbfW3
+R1
+Ia>CQ[GKV>YAk=;ClMAdlg2
+R2
+R0
+w1765492799
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync/tb_D_FF_SyncReset.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync/tb_D_FF_SyncReset.v
+!i122 1
+L0 4 42
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync/tb_D_FF_SyncReset.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/D_FF_Sync/tb_D_FF_SyncReset.v|
+!i113 1
+R5
+R6
+R7
+ntb_@d_@f@f_@sync@reset

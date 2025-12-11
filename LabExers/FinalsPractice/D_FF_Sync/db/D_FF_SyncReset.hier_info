@@ -1,0 +1,7 @@
+|D_FF_SyncReset
+Clk => Q~reg0.CLK
+nReset => Q.OUTPUTSELECT
+D => Q.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
