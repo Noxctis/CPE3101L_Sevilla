@@ -1,0 +1,35 @@
+|UpCounter
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+reset => count[2]~reg0.ACLR
+reset => count[3]~reg0.ACLR
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+count_en => count.OUTPUTSELECT
+count_en => count.OUTPUTSELECT
+count_en => count.OUTPUTSELECT
+count_en => count.OUTPUTSELECT
+c[0] => Mux0.IN3
+c[0] => Mux1.IN3
+c[0] => Mux2.IN3
+c[0] => Mux3.IN3
+c[1] => Mux0.IN2
+c[1] => Mux1.IN2
+c[1] => Mux2.IN2
+c[1] => Mux3.IN2
+data_in[0] => count.DATAB
+data_in[1] => count.DATAB
+data_in[2] => count.DATAB
+data_in[3] => count.DATAB
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

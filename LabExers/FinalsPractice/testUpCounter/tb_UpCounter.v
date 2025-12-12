@@ -1,13 +1,13 @@
 
 `timescale 1ns/1ps
-module tb_SetA_StepCounter;
+module tb_UpCounter;
 
     reg clk, reset, load, count_en;
     reg [1:0] c;
     reg [3:0] data_in;
     wire [3:0] count;
 
-    SetA_StepCounter UUT (
+    UpCounter UUT (
         .clk(clk), .reset(reset), .load(load),
         .count_en(count_en), .c(c),
         .data_in(data_in), .count(count)

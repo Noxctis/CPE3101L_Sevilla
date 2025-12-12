@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter/simulation/modelsim
+vtb_UpCounter
+Z1 !s110 1765503871
+!i10b 1
+!s100 EMa3f;`5^l;oa;SOXZX2`0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IP:SA=8ON;Zz<NUjb=lj^d2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1765503836
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter/tb_UpCounter.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter/tb_UpCounter.v
+!i122 1
+L0 3 39
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1765503871.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter/tb_UpCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter/tb_UpCounter.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter}
+Z8 tCvgOpt 0
+ntb_@up@counter
+vUpCounter
+R1
+!i10b 1
+!s100 I:9V5]7FNVn=3QFKlV6KM0
+R2
+IaC1@MTHhbd0KB?WQi>:OE2
+R3
+R0
+w1765503779
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter/UpCounter.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter/UpCounter.v
+!i122 0
+L0 2 27
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter/UpCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/FinalsPractice/testUpCounter/UpCounter.v|
+!i113 1
+R6
+R7
+R8
+n@up@counter
