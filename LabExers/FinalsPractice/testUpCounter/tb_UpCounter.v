@@ -2,23 +2,21 @@
 `timescale 1ns/1ps
 module tb_UpCounter;
 
-    reg clk, reset, load, count_en;
-    reg [1:0] c;
-    reg [3:0] data_in;
-    wire [3:0] count;
+    reg Clk, Reset;
+    reg [1:0] A;
+    wire [3:0] Z;
 
-    UpCounter UUT (
-        .clk(clk), .reset(reset), .load(load),
-        .count_en(count_en), .c(c),
-        .data_in(data_in), .count(count)
+    Problem_D UUT (
+        .Clk(Clk), .Reset(Reset), .A(A),
+        .Z(Z)
     );
 
     initial begin clk=0; forever #5 clk=~clk; end
 
     initial begin
-        $display("time  rst load en c  data | count");
-        $monitor("%4t   %b   %b    %b %02b  %4b | %4b",
-            $time, reset, load, count_en, c, data_in, count);
+        $display("time  rst A| Z");
+        $monitor("%4t  %b %02b  | %4b",
+            $time, Reset, A, Z);
 
         reset=0; load=0; count_en=0; c=2'b00; data_in=4'h0;
         @(posedge clk); @(posedge clk); reset=1;

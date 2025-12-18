@@ -1,0 +1,36 @@
+
+`timescale 1ns/1ps
+module tb_UpCounter;
+
+    reg Clk, Reset;
+    reg [1:0] A;
+    wire [3:0] Z;
+
+    Problem_D UUT (
+        .Clk(Clk), .Reset(Reset), .A(A),
+        .Z(Z)
+    );
+
+    initial begin Clk=0; forever #5 Clk=~Clk; end
+
+    initial begin
+        $display("time  rst A| Z");
+        $monitor("%4t  %b %02b  | %4b",
+            $time, Reset, A, Z);
+
+        Reset=0; A=2'b00; 
+        @(posedge Clk); @(posedge Clk); Reset=1;
+
+        // c=0: +2 even for 6 cycles (mod 16)
+        A=2'b00; repeat (6) @(posedge Clk);
+
+        // hold
+        A=2'b11; repeat (2) @(posedge Clk);
+
+        // c=1: +2 odd for 4 cycles
+        A=2'b01; repeat (4) @(posedge Clk);
+
+
+        $stop;
+    end
+endmodule
