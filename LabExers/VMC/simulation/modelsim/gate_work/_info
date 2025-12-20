@@ -1,0 +1,85 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/simulation/modelsim
+vhard_block
+Z1 !s110 1766191992
+!i10b 1
+!s100 nJCM`QfncUf`0hDAOO:7?0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;M2j54mH04oLK<z^a3kIS0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1766163596
+Z5 8VMC.vo
+Z6 FVMC.vo
+!i122 0
+L0 7378 45
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1766191992.000000
+Z9 !s107 VMC.vo|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|VMC.vo|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work +incdir+.
+Z13 tCvgOpt 0
+vtb_VMC
+!s110 1766191993
+!i10b 1
+!s100 <W?52BjfFiBbBj>mhhmAH3
+R2
+IUBnVjz>o`3FU?0Bzz9NCY2
+R3
+R0
+w1766164894
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/tb_VMC.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/tb_VMC.v
+!i122 1
+L0 7 156
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/tb_VMC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/tb_VMC.v|
+!i113 1
+R11
+!s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC}
+R13
+ntb_@v@m@c
+vVMC_DE10
+R1
+!i10b 1
+!s100 iHAL6hiK>ljk=Y4DEmn=i1
+R2
+I5a>cR@68ddJkK2zj8<QHc3
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 32 7345
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@v@m@c_@d@e10

@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Dec 18 11:32:12 2025
+Analysis & Synthesis Status : Successful - Sat Dec 20 08:53:50 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : VMC
-Top-level Entity Name : VMC_DE10
+Top-level Entity Name : VMC
 Family : MAX 10
-Total logic elements : 255
-    Total combinational functions : 249
-    Dedicated logic registers : 69
-Total registers : 69
-Total pins : 69
+Total logic elements : 175
+    Total combinational functions : 170
+    Dedicated logic registers : 46
+Total registers : 46
+Total pins : 40
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
