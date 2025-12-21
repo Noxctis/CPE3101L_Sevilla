@@ -118,7 +118,7 @@ module VMC (
                             state <= S_IDLE;
                         end else begin
                             // Activate coin return actuators based on greedy algorithm
-                            // Note: Matches the decrement logic in Datapath block
+                            //
                             if (change_due >= 8'd10)      C10 <= 1'b1;
                             else if (change_due >= 8'd5)  C5 <= 1'b1;
                             else if (change_due >= 8'd1)  C1 <= 1'b1;

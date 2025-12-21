@@ -1,0 +1,138 @@
+# Reading pref.tcl
+# do ComplexCounter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ClockDivider.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:28:29 on Dec 21,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ClockDivider.v 
+# -- Compiling module ClockDivider
+# 
+# Top level modules:
+# 	ClockDivider
+# End time: 22:28:29 on Dec 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ComplexCounter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:28:29 on Dec 21,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ComplexCounter.v 
+# -- Compiling module ComplexCounter
+# 
+# Top level modules:
+# 	ComplexCounter
+# End time: 22:28:29 on Dec 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/TopModule.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:28:29 on Dec 21,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/TopModule.v 
+# -- Compiling module TopModule
+# 
+# Top level modules:
+# 	TopModule
+# End time: 22:28:29 on Dec 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/tb_ComplexCounter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:28:30 on Dec 21,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/tb_ComplexCounter.v 
+# -- Compiling module tb_ComplexCounter
+# 
+# Top level modules:
+# 	tb_ComplexCounter
+# End time: 22:28:30 on Dec 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_ComplexCounter
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_ComplexCounter 
+# Start time: 22:28:30 on Dec 21,2025
+# Loading work.tb_ComplexCounter
+# Loading work.ComplexCounter
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# --- Starting Simulation ---
+# Applying Synchronous Reset...
+# Time:                    0 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 000 (0)
+# Time:                10000 | CLK: 1 | RST: 0 | Mode: 0 | COUNT: 000 (0)
+# Time:                20000 | CLK: 0 | RST: 0 | Mode: 0 | COUNT: 000 (0)
+# Reset Complete. State should be 000.
+# 
+# --- Test 1: Binary Counting Mode (M=0) ---
+# Time:                30000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 000 (0)
+# Time:                40000 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 001 (1)
+# Time:                50000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 001 (1)
+# Time:                60000 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 010 (2)
+# Time:                70000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 010 (2)
+# Time:                80000 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 011 (3)
+# Time:                90000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 011 (3)
+# Time:               100000 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 100 (4)
+# Time:               110000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 100 (4)
+# Time:               120000 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 101 (5)
+# Time:               130000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 101 (5)
+# Time:               140000 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 110 (6)
+# Time:               150000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 110 (6)
+# Time:               160000 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 111 (7)
+# Time:               170000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 111 (7)
+# Time:               180000 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 000 (0)
+# Time:               190000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 000 (0)
+# Time:               200000 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 001 (1)
+# Time:               210000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 001 (1)
+# 
+# --- Test 2: Gray Code Counting Mode (M=1) ---
+# Time:               220000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 010 (2)
+# Time:               230000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 010 (2)
+# Time:               240000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 110 (6)
+# Time:               250000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 110 (6)
+# Time:               260000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 111 (7)
+# Time:               270000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 111 (7)
+# Time:               280000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 101 (5)
+# Time:               290000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 101 (5)
+# Time:               300000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 100 (4)
+# Time:               310000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 100 (4)
+# Time:               320000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 000 (0)
+# Time:               330000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 000 (0)
+# Time:               340000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 001 (1)
+# Time:               350000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 001 (1)
+# Time:               360000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 011 (3)
+# Time:               370000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 011 (3)
+# Time:               380000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 010 (2)
+# Time:               390000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 010 (2)
+# Time:               400000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 110 (6)
+# Time:               410000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 110 (6)
+# 
+# --- Test 3: Switching Modes Mid-Count ---
+# Time:               420000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 111 (7)
+# Time:               430000 | CLK: 1 | RST: 0 | Mode: 1 | COUNT: 111 (7)
+# Time:               440000 | CLK: 0 | RST: 0 | Mode: 1 | COUNT: 000 (0)
+# Mode 0 (Binary): Counting to 010...
+# Time:               450000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 000 (0)
+# Time:               460000 | CLK: 0 | RST: 1 | Mode: 0 | COUNT: 001 (1)
+# Time:               470000 | CLK: 1 | RST: 1 | Mode: 0 | COUNT: 001 (1)
+# Switching to Mode 1 (Gray) NOW...
+# Time:               480000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 010 (2)
+# Time:               490000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 010 (2)
+# Time:               500000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 110 (6)
+# Time:               510000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 110 (6)
+# Time:               520000 | CLK: 0 | RST: 1 | Mode: 1 | COUNT: 111 (7)
+# Time:               530000 | CLK: 1 | RST: 1 | Mode: 1 | COUNT: 111 (7)
+# 
+# --- Simulation Finished ---
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/tb_ComplexCounter.v(90)
+#    Time: 540 ns  Iteration: 1  Instance: /tb_ComplexCounter
+# Break in Module tb_ComplexCounter at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/tb_ComplexCounter.v line 90
+# End time: 22:33:09 on Dec 21,2025, Elapsed time: 0:04:39
+# Errors: 0, Warnings: 0

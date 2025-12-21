@@ -1,4 +1,6 @@
-
+// Chrys Sean T. Sevilla
+// Group 4 CPE 3101L 10:30AM - 1:30PM
+// Verilog HDL code for ComplexCounter
 module TopModule (
     input  wire CLK50MHZ,   // 
     input  wire BTN_nRESET, // 

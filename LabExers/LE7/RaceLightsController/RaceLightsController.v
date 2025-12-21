@@ -1,107 +1,73 @@
+// Chrys Sean T. Sevilla
+// Group 4 CPE 3101L 10:30AM - 1:30PM
+// Verilog HDL code for RaceLightsController
 
-//------------------------------------------------------------------------------
-// RaceLightsController.v
-// Mealy FSM for race lights with timed holds.
-// CLOCK: 1 Hz, negative-edged sample
-// nRESET: asynchronous active-low
-// START: level to begin sequence
-// Outputs: RED, YELLOW, GREEN (one-hot)
-//
-// Timing (at 1 Hz):
-// - After START=1 in RED idle: RED holds 1 second
-// - YELLOW holds 1 second
-// - GREEN holds 3 seconds
-// - Return to RED idle
-//------------------------------------------------------------------------------
 module RaceLightsController (
-    input  wire CLOCK,      // negative-edged 1 Hz clock
-    input  wire nRESET,     // async active-low reset
-    input  wire START,      // start command
+    input  wire CLOCK,     // negative-edge 1 Hz
+    input  wire nRESET,    // async active-low
+    input  wire START,
     output reg  RED,
     output reg  YELLOW,
     output reg  GREEN
 );
-    // States (encoded)
-    localparam [2:0]
-        S_RED_IDLE    = 3'd0,  // red on, waiting for START
-        S_RED_HOLD    = 3'd1,  // red extra hold 1s after START
-        S_YELLOW_HOLD = 3'd2,  // yellow 1s
-        S_GREEN_HOLD  = 3'd3;  // green 3s, then back to red idle
 
-    // Hold durations (seconds @ 1Hz)
-    localparam integer T_RED_EXTRA = 1;
-    localparam integer T_YELLOW    = 1;
-    localparam integer T_GREEN     = 3;
+    // Explicit States for every second of the sequence
+    localparam [2:0]
+        S_RED_IDLE = 3'd0,  // Waiting for start
+        S_RED_1S   = 3'd1,  // Red on for 1 sec after start
+        S_YEL_1S   = 3'd2,  // Yellow on for 1 sec
+        S_GRN_1S   = 3'd3,  // Green sec 1
+        S_GRN_2S   = 3'd4,  // Green sec 2
+        S_GRN_3S   = 3'd5;  // Green sec 3
 
     reg [2:0] state, next_state;
-    reg [3:0] timer, next_timer;  // up to >=3 seconds; 4 bits enough
 
-    // Combinational Mealy outputs + next-state/time
-    always @* begin
-        // defaults
-        next_state = state;
-        next_timer = timer;
-        RED    = 1'b0;
-        YELLOW = 1'b0;
-        GREEN  = 1'b0;
-
+    // 1. Next State Logic (Combinational)
+    always @(*) begin
         case (state)
             S_RED_IDLE: begin
-                RED = 1'b1;
-                next_timer = 4'd0; // idle: timer cleared
-                // Mealy transition depends on input START
-                if (START) begin
-                    next_state = S_RED_HOLD;
-                    next_timer = 4'd0; // start new hold
-                end
+                if (START) next_state = S_RED_1S;   // Start pressed
+                else       next_state = S_RED_IDLE; // Wait
             end
 
-            S_RED_HOLD: begin
-                RED = 1'b1;
-                if (timer >= T_RED_EXTRA-1) begin
-                    next_state = S_YELLOW_HOLD;
-                    next_timer = 4'd0;
-                end else begin
-                    next_timer = timer + 1'b1;
-                end
-            end
+            S_RED_1S:   next_state = S_YEL_1S;   // Red done (1s), go Yellow
 
-            S_YELLOW_HOLD: begin
-                YELLOW = 1'b1;
-                if (timer >= T_YELLOW-1) begin
-                    next_state = S_GREEN_HOLD;
-                    next_timer = 4'd0;
-                end else begin
-                    next_timer = timer + 1'b1;
-                end
-            end
+            S_YEL_1S:   next_state = S_GRN_1S;   // Yellow done (1s), go Green
 
-            S_GREEN_HOLD: begin
-                GREEN = 1'b1;
-                if (timer >= T_GREEN-1) begin
-                    next_state = S_RED_IDLE; // return to reset state
-                    next_timer = 4'd0;
-                end else begin
-                    next_timer = timer + 1'b1;
-                end
-            end
+            S_GRN_1S:   next_state = S_GRN_2S;   // Green tick 1
+            S_GRN_2S:   next_state = S_GRN_3S;   // Green tick 2
+            S_GRN_3S:   next_state = S_RED_IDLE; // Green tick 3 (Done) -> Reset
 
-            default: begin
-                RED = 1'b1;           // safe default: show red
-                next_state = S_RED_IDLE;
-                next_timer = 4'd0;
-            end
+            default:    next_state = S_RED_IDLE;
         endcase
     end
 
-    // Sequential state/timer with negative-edge clock and async reset
+    // 2. Output Logic
+    always @(*) begin
+        // Default to off
+        RED = 0; YELLOW = 0; GREEN = 0;
+
+        case (state)
+            S_RED_IDLE: RED = 1;
+            S_RED_1S:   RED = 1;
+            
+            S_YEL_1S:   YELLOW = 1;
+            
+            S_GRN_1S:   GREEN = 1;
+            S_GRN_2S:   GREEN = 1;
+            S_GRN_3S:   GREEN = 1;
+            
+            default:    RED = 1;
+        endcase
+    end
+
+    // 3. Sequential Logic
     always @(negedge CLOCK or negedge nRESET) begin
         if (!nRESET) begin
-            state <= S_RED_IDLE;  // forced reset state
-            timer <= 4'd0;
+            state <= S_RED_IDLE;
         end else begin
             state <= next_state;
-            timer <= next_timer;
         end
     end
+
 endmodule

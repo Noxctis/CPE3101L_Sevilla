@@ -1,0 +1,85 @@
+/*
+File:           tb_RaceLightsController.v
+Author:         Chrys Sean T. Sevilla
+Class:          CPE 3101L
+Group/Schedule: Group 4 Fri 10:30 - 1:30 PM
+Description:    Testbench file for RaceLightsController
+*/
+
+`timescale 1ns/1ps
+
+module tb_RaceLightsController;
+
+    // 1. Inputs (Regs) and Outputs (Wires)
+    reg CLOCK;
+    reg nRESET;
+    reg START;
+    wire RED, YELLOW, GREEN;
+
+    // 2. Instantiate the Unit Under Test (UUT)
+    RaceLightsController uut (
+        .CLOCK(CLOCK), 
+        .nRESET(nRESET), 
+        .START(START), 
+        .RED(RED), 
+        .YELLOW(YELLOW), 
+        .GREEN(GREEN)
+    );
+
+    // 3. Clock Generation
+    // In hardware, this is 1 Hz (1 sec). In simulation, we make it fast (20ns)
+    // so we don't have to wait minutes for the waveform.
+    // LOGICALLY: 1 Clock Edge = 1 Second of timer.
+    initial CLOCK = 0;
+    always #10 CLOCK = ~CLOCK; 
+
+    // 4. Test Sequence
+    initial begin
+        // Initialize Inputs
+        nRESET = 1; 
+        START = 0;
+        
+        // --- RESET SEQUENCE ---
+        $display("--- Starting Simulation ---");
+        $display("Applying Async Reset...");
+        
+        nRESET = 0; // Active Low Reset
+        #15;        // Wait a bit
+        nRESET = 1; // Release Reset
+        $display("Reset Released. State should be RED IDLE.");
+        
+        // Wait a few seconds (cycles) to prove it stays IDLE
+        repeat(2) @(negedge CLOCK); 
+
+        // --- TEST CASE: START RACE SEQUENCE ---
+        $display("\n--- Initiating START Signal ---");
+        
+        // Pulse START synchronized to Positive edge (DUT reads on Negative)
+        @(posedge CLOCK);
+        START = 1;
+        @(posedge CLOCK);
+        START = 0;
+        
+        // --- OBSERVE SEQUENCE ---
+        // We expect:
+        // 1. RED IDLE -> RED 1S (1 sec)
+        // 2. RED 1S   -> YELLOW (1 sec)
+        // 3. YELLOW   -> GREEN  (3 secs total)
+        // 4. GREEN    -> RED IDLE
+        
+        $display("Sequence started. Waiting for 6 clock cycles (6 seconds)...");
+        repeat(8) @(negedge CLOCK);
+        
+        $display("\n--- Sequence Complete. Back to IDLE? ---");
+        
+        $stop;
+    end
+
+    // 5. Monitor Output
+    // This will print every time a light changes
+    initial begin
+        $monitor("Time: %t | CLK: %b | RST: %b | START: %b || RED: %b | YEL: %b | GRN: %b", 
+                 $time, CLOCK, nRESET, START, RED, YELLOW, GREEN);
+    end
+
+endmodule

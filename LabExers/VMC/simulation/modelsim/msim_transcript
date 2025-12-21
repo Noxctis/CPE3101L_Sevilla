@@ -10,40 +10,70 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/VMC {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/HexTo7SegmentDecoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:59:24 on Dec 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/HexTo7SegmentDecoder.v 
+# -- Compiling module HexTo7SegmentDecoder
+# 
+# Top level modules:
+# 	HexTo7SegmentDecoder
+# End time: 00:59:24 on Dec 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/VMC {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/ClockDivider.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:59:26 on Dec 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/ClockDivider.v 
+# -- Compiling module ClockDivider
+# 
+# Top level modules:
+# 	ClockDivider
+# End time: 00:59:26 on Dec 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/VMC {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:56:00 on Dec 20,2025
+# Start time: 00:59:26 on Dec 22,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC.v 
 # -- Compiling module VMC
 # 
 # Top level modules:
 # 	VMC
-# End time: 08:56:01 on Dec 20,2025, Elapsed time: 0:00:01
+# End time: 00:59:26 on Dec 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/VMC {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:59:26 on Dec 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v 
+# -- Compiling module VMC_DE10
+# 
+# Top level modules:
+# 	VMC_DE10
+# End time: 00:59:26 on Dec 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/VMC {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/tb_VMC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:56:01 on Dec 20,2025
+# Start time: 00:59:26 on Dec 22,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/tb_VMC.v 
 # -- Compiling module tb_VMC
 # 
 # Top level modules:
 # 	tb_VMC
-# End time: 08:56:01 on Dec 20,2025, Elapsed time: 0:00:00
+# End time: 00:59:26 on Dec 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_VMC
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_VMC 
-# Start time: 08:56:02 on Dec 20,2025
+# Start time: 00:59:26 on Dec 22,2025
 # Loading work.tb_VMC
 # Loading work.VMC
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Chrys Sean Sevilla  Hostname: LAPTOP-F18HSIJM  ProcessID: 34840
-#           Attempting to use alternate WLF file "./wlftqfmnge".
+#           Attempting to use alternate WLF file "./wlftv12cxw".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftqfmnge
+#           Using alternate file: ./wlftv12cxw
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -104,5 +134,5 @@
 # ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/tb_VMC.v(145)
 #    Time: 1070 ns  Iteration: 0  Instance: /tb_VMC
 # Break in Module tb_VMC at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/tb_VMC.v line 145
-# End time: 09:19:24 on Dec 20,2025, Elapsed time: 0:23:22
+# End time: 01:04:03 on Dec 22,2025, Elapsed time: 0:04:37
 # Errors: 0, Warnings: 2

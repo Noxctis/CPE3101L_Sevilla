@@ -1,0 +1,102 @@
+# Reading pref.tcl
+# do RaceLightsController_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/RaceLightsController.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:04:18 on Dec 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/RaceLightsController.v 
+# -- Compiling module RaceLightsController
+# 
+# Top level modules:
+# 	RaceLightsController
+# End time: 00:04:18 on Dec 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/ClockDivider.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:04:18 on Dec 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/ClockDivider.v 
+# -- Compiling module ClockDivider
+# 
+# Top level modules:
+# 	ClockDivider
+# End time: 00:04:19 on Dec 22,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:04:19 on Dec 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v 
+# -- Compiling module Top
+# 
+# Top level modules:
+# 	Top
+# End time: 00:04:19 on Dec 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Chrys\ Sean\ Sevilla/Desktop/School\ Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController {C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/tb_RaceLightsController.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:04:19 on Dec 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController" C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/tb_RaceLightsController.v 
+# -- Compiling module tb_RaceLightsController
+# 
+# Top level modules:
+# 	tb_RaceLightsController
+# End time: 00:04:19 on Dec 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_RaceLightsController
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_RaceLightsController 
+# Start time: 00:04:19 on Dec 22,2025
+# Loading work.tb_RaceLightsController
+# Loading work.RaceLightsController
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# --- Starting Simulation ---
+# Applying Async Reset...
+# Time:                    0 | CLK: 0 | RST: 0 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Time:                10000 | CLK: 1 | RST: 0 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Reset Released. State should be RED IDLE.
+# Time:                15000 | CLK: 1 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Time:                20000 | CLK: 0 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Time:                30000 | CLK: 1 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# 
+# --- Initiating START Signal ---
+# Time:                40000 | CLK: 0 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Time:                50000 | CLK: 1 | RST: 1 | START: 1 || RED: 1 | YEL: 0 | GRN: 0
+# Time:                60000 | CLK: 0 | RST: 1 | START: 1 || RED: 1 | YEL: 0 | GRN: 0
+# Sequence started. Waiting for 6 clock cycles (6 seconds)...
+# Time:                70000 | CLK: 1 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Time:                80000 | CLK: 0 | RST: 1 | START: 0 || RED: 0 | YEL: 1 | GRN: 0
+# Time:                90000 | CLK: 1 | RST: 1 | START: 0 || RED: 0 | YEL: 1 | GRN: 0
+# Time:               100000 | CLK: 0 | RST: 1 | START: 0 || RED: 0 | YEL: 0 | GRN: 1
+# Time:               110000 | CLK: 1 | RST: 1 | START: 0 || RED: 0 | YEL: 0 | GRN: 1
+# Time:               120000 | CLK: 0 | RST: 1 | START: 0 || RED: 0 | YEL: 0 | GRN: 1
+# Time:               130000 | CLK: 1 | RST: 1 | START: 0 || RED: 0 | YEL: 0 | GRN: 1
+# Time:               140000 | CLK: 0 | RST: 1 | START: 0 || RED: 0 | YEL: 0 | GRN: 1
+# Time:               150000 | CLK: 1 | RST: 1 | START: 0 || RED: 0 | YEL: 0 | GRN: 1
+# Time:               160000 | CLK: 0 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Time:               170000 | CLK: 1 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Time:               180000 | CLK: 0 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Time:               190000 | CLK: 1 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Time:               200000 | CLK: 0 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# Time:               210000 | CLK: 1 | RST: 1 | START: 0 || RED: 1 | YEL: 0 | GRN: 0
+# 
+# --- Sequence Complete. Back to IDLE? ---
+# ** Note: $stop    : C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/tb_RaceLightsController.v(71)
+#    Time: 220 ns  Iteration: 1  Instance: /tb_RaceLightsController
+# Break in Module tb_RaceLightsController at C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/tb_RaceLightsController.v line 71
+# End time: 00:08:02 on Dec 22,2025, Elapsed time: 0:03:43
+# Errors: 0, Warnings: 0

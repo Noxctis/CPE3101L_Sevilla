@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/simulation/modelsim
+vClockDivider
+Z1 !s110 1766327309
+!i10b 1
+!s100 6;WjAH:XhAkjEYTLJ@<iD0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ILCzfKAT0aGZK_XBNV?g_V3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1764342247
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ClockDivider.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ClockDivider.v
+!i122 0
+L0 5 28
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1766327309.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ClockDivider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ClockDivider.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter}
+Z8 tCvgOpt 0
+n@clock@divider
+vComplexCounter
+R1
+!i10b 1
+!s100 <9;S2DW[XLLd<>H5^D:`>0
+R2
+I9o:9Yh6HWLSf:o]XWi4b;3
+R3
+R0
+w1766326079
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ComplexCounter.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ComplexCounter.v
+!i122 1
+L0 5 71
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ComplexCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/ComplexCounter.v|
+!i113 1
+R6
+R7
+R8
+n@complex@counter
+vtb_ComplexCounter
+!s110 1766327310
+!i10b 1
+!s100 a6_?PCNJWJ_<4;ck86RN[3
+R2
+IYIK_8@_CGljz:K?0KL:R11
+R3
+R0
+w1766327227
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/tb_ComplexCounter.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/tb_ComplexCounter.v
+!i122 3
+L0 11 89
+R4
+r1
+!s85 0
+31
+!s108 1766327310.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/tb_ComplexCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/tb_ComplexCounter.v|
+!i113 1
+R6
+R7
+R8
+ntb_@complex@counter
+vTopModule
+R1
+!i10b 1
+!s100 60i>khXBoI8Q:lYM`;RG]1
+R2
+I3LC`zczd6I@P>C=8]ff]a2
+R3
+R0
+w1766325580
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/TopModule.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/TopModule.v
+!i122 2
+L0 4 33
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/TopModule.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/ComplexCounter/TopModule.v|
+!i113 1
+R6
+R7
+R8
+n@top@module

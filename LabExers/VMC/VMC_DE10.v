@@ -1,6 +1,6 @@
-// Chrys Sean T. Sevilla
+// Chrys Sean T. Sevilla and Cyril John Christian Calo
 // Group 4 CPE 3101L 10:30AM - 1:30PM
-// Top-Level Wrapper for DE10-Lite with 7-Segment Displays
+// Top with 7-Segment Displays
 
 module VMC_DE10 (
     input  wire MAX10_CLK1_50, // 50 MHz Board Clock
@@ -39,7 +39,7 @@ module VMC_DE10 (
         .C1      (LEDR[5]), .C5 (LEDR[6]), .C10 (LEDR[7]),
         .DISPENSE(LEDR[9]),
 
-        // New Debug Connections
+        
         .DBG_COST   (w_cost),
         .DBG_PAID   (w_paid),
         .DBG_CHANGE (w_change)

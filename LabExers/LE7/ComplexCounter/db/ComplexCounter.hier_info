@@ -64,17 +64,29 @@ clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopModule|ComplexCounter:u_cnt
-CLOCK => state[0].CLK
-CLOCK => state[1].CLK
-CLOCK => state[2].CLK
+CLOCK => state~1.DATAIN
 nRESET => state.OUTPUTSELECT
 nRESET => state.OUTPUTSELECT
 nRESET => state.OUTPUTSELECT
-M => next_state[2].OUTPUTSELECT
-M => next_state[1].OUTPUTSELECT
-M => next_state[0].OUTPUTSELECT
-COUNT[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
-COUNT[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
-COUNT[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
+nRESET => state.OUTPUTSELECT
+nRESET => state.OUTPUTSELECT
+nRESET => state.OUTPUTSELECT
+nRESET => state.OUTPUTSELECT
+nRESET => state.OUTPUTSELECT
+M => Selector2.IN3
+M => Selector5.IN3
+M => Selector1.IN3
+M => Selector0.IN3
+M => Selector3.IN3
+M => Selector4.IN3
+M => Selector1.IN1
+M => Selector2.IN1
+M => Selector3.IN1
+M => Selector4.IN1
+M => Selector5.IN1
+M => Selector0.IN1
+COUNT[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+COUNT[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+COUNT[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

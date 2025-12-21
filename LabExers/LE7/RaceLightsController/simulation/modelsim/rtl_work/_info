@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/simulation/modelsim
+vClockDivider
+Z1 !s110 1766333059
+!i10b 1
+!s100 =_:B3ZPAhzzRLE0eNi?zz3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IHL]Z;51<UdiKE_RGGjRQ?0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1764342247
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/ClockDivider.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/ClockDivider.v
+!i122 1
+L0 7 25
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1766333058.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/ClockDivider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/ClockDivider.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController}
+Z8 tCvgOpt 0
+n@clock@divider
+vRaceLightsController
+!s110 1766333058
+!i10b 1
+!s100 ^KY?<n5Ak]PRU:hn8Pz6T1
+R2
+I<YUhAa?Z]HjS<H@3J9HVD2
+R3
+R0
+w1766330539
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/RaceLightsController.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/RaceLightsController.v
+!i122 0
+L0 5 69
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/RaceLightsController.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/RaceLightsController.v|
+!i113 1
+R6
+R7
+R8
+n@race@lights@controller
+vtb_RaceLightsController
+R1
+!i10b 1
+!s100 :TNAOdUdO8VmKQ?;T_Vag1
+R2
+I`Y_NZ_T`ggMX6k:I[MRPz2
+R3
+R0
+w1766332986
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/tb_RaceLightsController.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/tb_RaceLightsController.v
+!i122 3
+L0 11 70
+R4
+r1
+!s85 0
+31
+Z9 !s108 1766333059.000000
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/tb_RaceLightsController.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/tb_RaceLightsController.v|
+!i113 1
+R6
+R7
+R8
+ntb_@race@lights@controller
+vTop
+R1
+!i10b 1
+!s100 ?oPL3Kb]3>^aeI9^9a8bV2
+R2
+I`6gAH3_iR0hjfA=37cDS[1
+R3
+R0
+w1766332206
+8C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v
+FC:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v
+!i122 2
+L0 5 27
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController|C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v|
+!i113 1
+R6
+R7
+R8
+n@top

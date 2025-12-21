@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VMC
-Sat Dec 20 08:53:50 2025
+Mon Dec 22 00:54:22 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,13 +13,20 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |VMC|state
+  8. State Machine - |VMC_DE10|VMC:vmc_inst|state
   9. Registers Removed During Synthesis
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+ 12. Parameter Settings for User Entity Instance: ClockDivider:clk_div_inst
+ 13. Port Connectivity Checks: "HexTo7SegmentDecoder:disp_cost_H"
+ 14. Port Connectivity Checks: "HexTo7SegmentDecoder:disp_cost_L"
+ 15. Port Connectivity Checks: "HexTo7SegmentDecoder:disp_change_H"
+ 16. Port Connectivity Checks: "HexTo7SegmentDecoder:disp_change_L"
+ 17. Port Connectivity Checks: "HexTo7SegmentDecoder:disp_paid_H"
+ 18. Port Connectivity Checks: "HexTo7SegmentDecoder:disp_paid_L"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -46,16 +53,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 20 08:53:50 2025       ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 22 00:54:22 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; VMC                                         ;
-; Top-level Entity Name              ; VMC                                         ;
+; Top-level Entity Name              ; VMC_DE10                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 175                                         ;
-;     Total combinational functions  ; 170                                         ;
-;     Dedicated logic registers      ; 46                                          ;
-; Total registers                    ; 46                                          ;
-; Total pins                         ; 40                                          ;
+; Total logic elements               ; 256                                         ;
+;     Total combinational functions  ; 251                                         ;
+;     Dedicated logic registers      ; 72                                          ;
+; Total registers                    ; 72                                          ;
+; Total pins                         ; 69                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -71,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; VMC                ; VMC                ;
+; Top-level entity name                                            ; VMC_DE10           ; VMC                ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -168,13 +175,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                         ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------+---------+
-; VMC.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                          ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; HexTo7SegmentDecoder.v           ; yes             ; User Verilog HDL File  ; C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/HexTo7SegmentDecoder.v ;         ;
+; ClockDivider.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/ClockDivider.v         ;         ;
+; VMC.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC.v                  ;         ;
+; VMC_DE10.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v             ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -182,46 +192,53 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 175         ;
+; Estimated Total logic elements              ; 256         ;
 ;                                             ;             ;
-; Total combinational functions               ; 170         ;
+; Total combinational functions               ; 251         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 90          ;
+;     -- 4 input functions                    ; 133         ;
 ;     -- 3 input functions                    ; 20          ;
-;     -- <=2 input functions                  ; 60          ;
+;     -- <=2 input functions                  ; 98          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 123         ;
-;     -- arithmetic mode                      ; 47          ;
+;     -- normal mode                          ; 180         ;
+;     -- arithmetic mode                      ; 71          ;
 ;                                             ;             ;
-; Total registers                             ; 46          ;
-;     -- Dedicated logic registers            ; 46          ;
+; Total registers                             ; 72          ;
+;     -- Dedicated logic registers            ; 72          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 40          ;
+; I/O pins                                    ; 69          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; CLOCK~input ;
-; Maximum fan-out                             ; 46          ;
-; Total fan-out                               ; 757         ;
-; Average fan-out                             ; 2.56        ;
+; Maximum fan-out node                        ; SW[9]~input ;
+; Maximum fan-out                             ; 72          ;
+; Total fan-out                               ; 1126        ;
+; Average fan-out                             ; 2.44        ;
 +---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |VMC                       ; 170 (170)           ; 46 (46)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 40   ; 0            ; 0          ; |VMC                ; VMC         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                               ;
++-----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                          ; Entity Name          ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------+----------------------+--------------+
+; |VMC_DE10                               ; 251 (0)             ; 72 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 69   ; 0            ; 0          ; |VMC_DE10                                    ; VMC_DE10             ; work         ;
+;    |ClockDivider:clk_div_inst|          ; 46 (46)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VMC_DE10|ClockDivider:clk_div_inst          ; ClockDivider         ; work         ;
+;    |HexTo7SegmentDecoder:disp_change_H| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VMC_DE10|HexTo7SegmentDecoder:disp_change_H ; HexTo7SegmentDecoder ; work         ;
+;    |HexTo7SegmentDecoder:disp_change_L| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VMC_DE10|HexTo7SegmentDecoder:disp_change_L ; HexTo7SegmentDecoder ; work         ;
+;    |HexTo7SegmentDecoder:disp_cost_L|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VMC_DE10|HexTo7SegmentDecoder:disp_cost_L   ; HexTo7SegmentDecoder ; work         ;
+;    |HexTo7SegmentDecoder:disp_paid_H|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VMC_DE10|HexTo7SegmentDecoder:disp_paid_H   ; HexTo7SegmentDecoder ; work         ;
+;    |HexTo7SegmentDecoder:disp_paid_L|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VMC_DE10|HexTo7SegmentDecoder:disp_paid_L   ; HexTo7SegmentDecoder ; work         ;
+;    |VMC:vmc_inst|                       ; 170 (170)           ; 46 (46)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VMC_DE10|VMC:vmc_inst                       ; VMC                  ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |VMC|state                                                                                                                              ;
+; State Machine - |VMC_DE10|VMC:vmc_inst|state                                                                                                            ;
 +-----------------------+--------------------+----------------+---------------------+-----------------------+-------------+----------------+--------------+
 ; Name                  ; state.S_OUT_CHANGE ; state.S_REFUND ; state.S_CALC_CHANGE ; state.S_DISPENSE_ITEM ; state.S_PAY ; state.S_SELECT ; state.S_IDLE ;
 +-----------------------+--------------------+----------------+---------------------+-----------------------+-------------+----------------+--------------+
@@ -240,11 +257,11 @@ Encoding Type:  One-Hot
 +---------------------------------------+----------------------------------------+
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
-; price[5..7]                           ; Merged with price[4]                   ;
-; price[4]                              ; Stuck at GND due to stuck port data_in ;
-; state~10                              ; Lost fanout                            ;
-; state~11                              ; Lost fanout                            ;
-; state~12                              ; Lost fanout                            ;
+; VMC:vmc_inst|price[5..7]              ; Merged with VMC:vmc_inst|price[4]      ;
+; VMC:vmc_inst|price[4]                 ; Stuck at GND due to stuck port data_in ;
+; VMC:vmc_inst|state~10                 ; Lost fanout                            ;
+; VMC:vmc_inst|state~11                 ; Lost fanout                            ;
+; VMC:vmc_inst|state~12                 ; Lost fanout                            ;
 ; Total Number of Removed Registers = 7 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
@@ -254,29 +271,93 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 46    ;
+; Total registers                              ; 72    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 46    ;
+; Number of registers using Asynchronous Clear ; 72    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 21    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |VMC|final_change_display[0] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |VMC|price[1]                ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |VMC|item_ptr[1]             ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; Yes        ; |VMC|change_due[7]           ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; No         ; |VMC|balance                 ;
-; 10:1               ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |VMC|state                   ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 6 LEs                ; 8 LEs                  ; No         ; |VMC|state                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |VMC_DE10|VMC:vmc_inst|final_change_display[4] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |VMC_DE10|VMC:vmc_inst|price[1]                ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |VMC_DE10|VMC:vmc_inst|item_ptr[1]             ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; Yes        ; |VMC_DE10|VMC:vmc_inst|change_due[7]           ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; No         ; |VMC_DE10|VMC:vmc_inst|balance                 ;
+; 10:1               ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |VMC_DE10|VMC:vmc_inst|state                   ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 6 LEs                ; 8 LEs                  ; No         ; |VMC_DE10|VMC:vmc_inst|state                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ClockDivider:clk_div_inst ;
++----------------+----------+--------------------------------------------+
+; Parameter Name ; Value    ; Type                                       ;
++----------------+----------+--------------------------------------------+
+; DIV_FACTOR     ; 12500000 ; Signed Integer                             ;
++----------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "HexTo7SegmentDecoder:disp_cost_H" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; dp   ; Input ; Info     ; Stuck at VCC                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "HexTo7SegmentDecoder:disp_cost_L" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; dp   ; Input ; Info     ; Stuck at VCC                       ;
++------+-------+----------+------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "HexTo7SegmentDecoder:disp_change_H" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; dp   ; Input ; Info     ; Stuck at VCC                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "HexTo7SegmentDecoder:disp_change_L" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; dp   ; Input ; Info     ; Stuck at VCC                         ;
++------+-------+----------+--------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "HexTo7SegmentDecoder:disp_paid_H" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; dp   ; Input ; Info     ; Stuck at VCC                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "HexTo7SegmentDecoder:disp_paid_L" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; dp   ; Input ; Info     ; Stuck at VCC                       ;
++------+-------+----------+------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -284,23 +365,23 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 40                          ;
-; cycloneiii_ff         ; 46                          ;
-;     CLR               ; 25                          ;
+; boundary_port         ; 69                          ;
+; cycloneiii_ff         ; 72                          ;
+;     CLR               ; 51                          ;
 ;     ENA CLR           ; 21                          ;
-; cycloneiii_lcell_comb ; 171                         ;
-;     arith             ; 47                          ;
-;         2 data inputs ; 43                          ;
+; cycloneiii_lcell_comb ; 258                         ;
+;     arith             ; 71                          ;
+;         2 data inputs ; 67                          ;
 ;         3 data inputs ; 4                           ;
-;     normal            ; 124                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 8                           ;
+;     normal            ; 187                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 15                          ;
+;         2 data inputs ; 21                          ;
 ;         3 data inputs ; 16                          ;
-;         4 data inputs ; 90                          ;
+;         4 data inputs ; 133                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.24                        ;
+; Average LUT depth     ; 3.84                        ;
 +-----------------------+-----------------------------+
 
 
@@ -309,7 +390,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -319,7 +400,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Dec 20 08:53:25 2025
+    Info: Processing started: Mon Dec 22 00:54:14 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VMC -c VMC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -333,25 +414,44 @@ Info (12021): Found 1 design units, including 1 entities, in source file tb_vmc.
     Info (12023): Found entity 1: tb_VMC File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/tb_VMC.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file vmc_de10.v
     Info (12023): Found entity 1: VMC_DE10 File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 5
-Info (12127): Elaborating entity "VMC" for the top level hierarchy
+Info (12127): Elaborating entity "VMC_DE10" for the top level hierarchy
+Info (12128): Elaborating entity "ClockDivider" for hierarchy "ClockDivider:clk_div_inst" File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 28
+Warning (10230): Verilog HDL assignment warning at ClockDivider.v(25): truncated value with size 32 to match size of target (25) File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/ClockDivider.v Line: 25
+Info (12128): Elaborating entity "VMC" for hierarchy "VMC:vmc_inst" File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 46
 Info (10264): Verilog HDL Case Statement information at VMC.v(153): all case item expressions in this case statement are onehot File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC.v Line: 153
+Info (12128): Elaborating entity "HexTo7SegmentDecoder" for hierarchy "HexTo7SegmentDecoder:disp_paid_L" File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 53
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "DBG_COST[4]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC.v Line: 29
-    Warning (13410): Pin "DBG_COST[5]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC.v Line: 29
-    Warning (13410): Pin "DBG_COST[6]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC.v Line: 29
-    Warning (13410): Pin "DBG_COST[7]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC.v Line: 29
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 8
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 8
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 8
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 9
+    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 10
+    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 11
+    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 12
+    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 13
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 15
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 15
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 15
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 15
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 15
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 15
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 15
+    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 15
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 219 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 31 output pins
-    Info (21061): Implemented 179 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4839 megabytes
-    Info: Processing ended: Sat Dec 20 08:53:50 2025
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:23
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 7
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/VMC/VMC_DE10.v Line: 7
+Info (21057): Implemented 329 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 58 output pins
+    Info (21061): Implemented 260 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4840 megabytes
+    Info: Processing ended: Mon Dec 22 00:54:22 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
 
 

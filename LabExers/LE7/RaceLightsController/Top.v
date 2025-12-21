@@ -1,12 +1,11 @@
+// Chrys Sean T. Sevilla
+// Group 4 CPE 3101L 10:30AM - 1:30PM
+// Verilog HDL code for RaceLightsController
 
-//------------------------------------------------------------------------------
-// Top.v
-// Connects ClockDivider and RaceLightsController to board I/O.
-//------------------------------------------------------------------------------
 module Top (
     input  wire CLK50MHZ,   // board clock 50 MHz
-    input  wire BTN_nRESET, // pushbutton (active-low)
-    input  wire SW_START,   // start switch/button (active-high)
+    input  wire BTN_nRESET, // (active-low)
+    input  wire SW_START,   // start switch (active-high)
     output wire RED,
     output wire YELLOW,
     output wire GREEN
@@ -16,7 +15,7 @@ module Top (
     // Divide 50MHz -> 1Hz
     ClockDivider #(.DIV_FACTOR(25_000_000)) u_div (
         .clk_in (CLK50MHZ),
-        .nReset (BTN_nRESET),   // async reset OK here
+        .nReset (BTN_nRESET),   // async reset
         .clk_out(clk_1hz)
     );
 

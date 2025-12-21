@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RaceLightsController
-Fri Nov 28 12:39:28 2025
+Mon Dec 22 00:03:18 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -15,13 +15,11 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |Top|RaceLightsController:u_ctrl|state
   9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: ClockDivider:u_div
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: ClockDivider:u_div
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -48,13 +46,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 28 12:39:27 2025       ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 22 00:03:18 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; RaceLightsController                        ;
 ; Top-level Entity Name              ; Top                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 55                                          ;
-;     Total combinational functions  ; 54                                          ;
+; Total logic elements               ; 54                                          ;
+;     Total combinational functions  ; 50                                          ;
 ;     Dedicated logic registers      ; 32                                          ;
 ; Total registers                    ; 32                                          ;
 ; Total pins                         ; 6                                           ;
@@ -158,27 +156,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                               ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------+---------+
-; RaceLightsController.v           ; yes             ; User Verilog HDL File  ; Z:/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/RaceLightsController.v ;         ;
-; ClockDivider.v                   ; yes             ; User Verilog HDL File  ; Z:/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/ClockDivider.v         ;         ;
-; Top.v                            ; yes             ; User Verilog HDL File  ; Z:/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v                  ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                               ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; RaceLightsController.v           ; yes             ; User Verilog HDL File  ; C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/RaceLightsController.v ;         ;
+; ClockDivider.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/ClockDivider.v         ;         ;
+; Top.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v                  ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------+
@@ -186,16 +184,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------+
 ; Resource                                    ; Usage            ;
 +---------------------------------------------+------------------+
-; Estimated Total logic elements              ; 55               ;
+; Estimated Total logic elements              ; 54               ;
 ;                                             ;                  ;
-; Total combinational functions               ; 54               ;
+; Total combinational functions               ; 50               ;
 ; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 12               ;
+;     -- 4 input functions                    ; 8                ;
 ;     -- 3 input functions                    ; 2                ;
 ;     -- <=2 input functions                  ; 40               ;
 ;                                             ;                  ;
 ; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 30               ;
+;     -- normal mode                          ; 26               ;
 ;     -- arithmetic mode                      ; 24               ;
 ;                                             ;                  ;
 ; Total registers                             ; 32               ;
@@ -208,8 +206,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                  ;
 ; Maximum fan-out node                        ; BTN_nRESET~input ;
 ; Maximum fan-out                             ; 32               ;
-; Total fan-out                               ; 238              ;
-; Average fan-out                             ; 2.43             ;
+; Total fan-out                               ; 222              ;
+; Average fan-out                             ; 2.36             ;
 +---------------------------------------------+------------------+
 
 
@@ -218,47 +216,38 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name              ; Entity Name          ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------+----------------------+--------------+
-; |Top                             ; 54 (0)              ; 32 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 6    ; 0            ; 0          ; |Top                             ; Top                  ; work         ;
+; |Top                             ; 50 (0)              ; 32 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 6    ; 0            ; 0          ; |Top                             ; Top                  ; work         ;
 ;    |ClockDivider:u_div|          ; 46 (46)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top|ClockDivider:u_div          ; ClockDivider         ; work         ;
-;    |RaceLightsController:u_ctrl| ; 8 (8)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top|RaceLightsController:u_ctrl ; RaceLightsController ; work         ;
+;    |RaceLightsController:u_ctrl| ; 4 (4)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top|RaceLightsController:u_ctrl ; RaceLightsController ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+------------------------------------------------------------------------------------------------------+
-; State Machine - |Top|RaceLightsController:u_ctrl|state                                               ;
-+---------------------+--------------------+---------------------+------------------+------------------+
-; Name                ; state.S_GREEN_HOLD ; state.S_YELLOW_HOLD ; state.S_RED_HOLD ; state.S_RED_IDLE ;
-+---------------------+--------------------+---------------------+------------------+------------------+
-; state.S_RED_IDLE    ; 0                  ; 0                   ; 0                ; 0                ;
-; state.S_RED_HOLD    ; 0                  ; 0                   ; 1                ; 1                ;
-; state.S_YELLOW_HOLD ; 0                  ; 1                   ; 0                ; 1                ;
-; state.S_GREEN_HOLD  ; 1                  ; 0                   ; 0                ; 1                ;
-+---------------------+--------------------+---------------------+------------------+------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Top|RaceLightsController:u_ctrl|state                                                                   ;
++------------------+----------------+----------------+----------------+----------------+----------------+------------------+
+; Name             ; state.S_GRN_3S ; state.S_GRN_2S ; state.S_GRN_1S ; state.S_YEL_1S ; state.S_RED_1S ; state.S_RED_IDLE ;
++------------------+----------------+----------------+----------------+----------------+----------------+------------------+
+; state.S_RED_IDLE ; 0              ; 0              ; 0              ; 0              ; 0              ; 0                ;
+; state.S_RED_1S   ; 0              ; 0              ; 0              ; 0              ; 1              ; 1                ;
+; state.S_YEL_1S   ; 0              ; 0              ; 0              ; 1              ; 0              ; 1                ;
+; state.S_GRN_1S   ; 0              ; 0              ; 1              ; 0              ; 0              ; 1                ;
+; state.S_GRN_2S   ; 0              ; 1              ; 0              ; 0              ; 0              ; 1                ;
+; state.S_GRN_3S   ; 1              ; 0              ; 0              ; 0              ; 0              ; 1                ;
++------------------+----------------+----------------+----------------+----------------+----------------+------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; RaceLightsController:u_ctrl|state~4    ; Lost fanout                            ;
-; RaceLightsController:u_ctrl|state~5    ; Lost fanout                            ;
-; RaceLightsController:u_ctrl|state~6    ; Lost fanout                            ;
-; RaceLightsController:u_ctrl|timer[2,3] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 5  ;                                        ;
-+----------------------------------------+----------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                               ;
-+--------------------------------------+---------------------------+----------------------------------------+
-; Register name                        ; Reason for Removal        ; Registers Removed due to This Register ;
-+--------------------------------------+---------------------------+----------------------------------------+
-; RaceLightsController:u_ctrl|timer[3] ; Stuck at GND              ; RaceLightsController:u_ctrl|timer[2]   ;
-;                                      ; due to stuck port data_in ;                                        ;
-+--------------------------------------+---------------------------+----------------------------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; RaceLightsController:u_ctrl|state~4   ; Lost fanout        ;
+; RaceLightsController:u_ctrl|state~5   ; Lost fanout        ;
+; RaceLightsController:u_ctrl|state~6   ; Lost fanout        ;
+; Total Number of Removed Registers = 3 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -274,15 +263,6 @@ Encoding Type:  One-Hot
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |Top|RaceLightsController:u_ctrl|Selector5 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 
 
 +-----------------------------------------------------------------+
@@ -303,14 +283,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 6                           ;
 ; cycloneiii_ff         ; 32                          ;
 ;     CLR               ; 32                          ;
-; cycloneiii_lcell_comb ; 54                          ;
+; cycloneiii_lcell_comb ; 52                          ;
 ;     arith             ; 24                          ;
 ;         2 data inputs ; 24                          ;
-;     normal            ; 30                          ;
-;         1 data inputs ; 1                           ;
+;     normal            ; 28                          ;
+;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 2                           ;
-;         4 data inputs ; 12                          ;
+;         4 data inputs ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.40                        ;
 ; Average LUT depth     ; 3.37                        ;
@@ -332,31 +312,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 28 12:39:19 2025
+    Info: Processing started: Mon Dec 22 00:03:11 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RaceLightsController -c RaceLightsController
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file racelightscontroller.v
-    Info (12023): Found entity 1: RaceLightsController File: Z:/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/RaceLightsController.v Line: 16
+    Info (12023): Found entity 1: RaceLightsController File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/RaceLightsController.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file clockdivider.v
-    Info (12023): Found entity 1: ClockDivider File: Z:/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/ClockDivider.v Line: 7
+    Info (12023): Found entity 1: ClockDivider File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/ClockDivider.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file top.v
-    Info (12023): Found entity 1: Top File: Z:/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v Line: 6
+    Info (12023): Found entity 1: Top File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file tb_racelightscontroller.v
+    Info (12023): Found entity 1: tb_RaceLightsController File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/tb_RaceLightsController.v Line: 11
 Info (12127): Elaborating entity "Top" for the top level hierarchy
-Info (12128): Elaborating entity "ClockDivider" for hierarchy "ClockDivider:u_div" File: Z:/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v Line: 21
-Info (12128): Elaborating entity "RaceLightsController" for hierarchy "RaceLightsController:u_ctrl" File: Z:/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v Line: 31
+Info (12128): Elaborating entity "ClockDivider" for hierarchy "ClockDivider:u_div" File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v Line: 20
+Info (12128): Elaborating entity "RaceLightsController" for hierarchy "RaceLightsController:u_ctrl" File: C:/Users/Chrys Sean Sevilla/Desktop/School Stuff/CPE3101L_Sevilla/LabExers/LE7/RaceLightsController/Top.v Line: 30
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 61 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 60 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 55 logic cells
+    Info (21061): Implemented 54 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Fri Nov 28 12:39:28 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Mon Dec 22 00:03:18 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:19
 
 

@@ -51,7 +51,7 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_ClockDivider -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_RaceLightsController -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_timing_analysis
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_formal_verification
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
@@ -70,4 +70,11 @@ set_location_assignment PIN_C10 -to SW_START
 set_location_assignment PIN_A10 -to RED
 set_location_assignment PIN_A9 -to YELLOW
 set_location_assignment PIN_A8 -to GREEN
+set_global_assignment -name VERILOG_FILE tb_RaceLightsController.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_RaceLightsController -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_RaceLightsController
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_RaceLightsController -section_id tb_RaceLightsController
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_RaceLightsController.v -section_id tb_RaceLightsController
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
